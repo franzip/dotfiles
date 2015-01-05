@@ -50,7 +50,9 @@ brew install homebrew/php/php55 --with-gmp
 brew install bfg
 brew install binutils
 brew install binwalk
+brew install caskroom/cask/brew-cask
 brew install cifer
+brew install colordiff
 brew install dex2jar
 brew install dns2tcp
 brew install fcrackzip
@@ -60,6 +62,7 @@ brew install hydra
 brew install john
 brew install knock
 brew install nmap
+brew install ngrep
 brew install pngcheck
 brew install socat
 brew install sqlmap
