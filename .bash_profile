@@ -9,6 +9,24 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+# generic colouriser
+GRC=`which grc`
+if [ "$TERM" != dumb ] && [ -n "$GRC" ]
+then
+    alias colourify="$GRC -es --colour=auto"
+    alias configure='colourify ./configure'
+    alias diff='colourify diff'
+    alias make='colourify make'
+    alias gcc='colourify gcc'
+    alias g++='colourify g++'
+    alias as='colourify as'
+    alias gas='colourify gas'
+    alias ld='colourify ld'
+    alias netstat='colourify netstat'
+    alias ping='colourify ping'
+    alias traceroute='colourify /usr/sbin/traceroute'
+fi
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
@@ -46,3 +64,6 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
