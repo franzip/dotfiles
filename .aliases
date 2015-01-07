@@ -72,7 +72,8 @@ alias aphrest="apachectl stop"
 
 alias cask='brew cask'
 alias g="git"
-alias v="vim"
+# avoid forking new processes
+alias v="mvim -f"
 alias fs="stat -f \"%z bytes\""
 alias h="history"
 alias j="jobs"
