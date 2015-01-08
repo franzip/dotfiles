@@ -5,6 +5,27 @@ let g:solarized_termtrans=1
 
 " Make Vim more useful
 set nocompatible
+
+" Vundle support {
+
+  " Keep .vimrc clean. Load stuff from different .vim files
+  " inspired by https://github.com/ddellaquila/dd-vim
+  let $MODULES=$HOME."/.vim/modules"
+
+  filetype off
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+  Plugin 'gmarik/Vundle.vim'
+
+  " Load plugins
+  source $MODULES/plugins.vim
+  " All of your Plugins must be added before the following line
+  call vundle#end()
+
+  filetype plugin indent on
+
+" }
+
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 " Enhance command-line completion
@@ -46,6 +67,7 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+" Show “invisible” characters
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
@@ -83,24 +105,17 @@ endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
-" Strip trailing whitespace (,ss)
-function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
-endfunction
+" Load filetypes
+
+source $MODULES/filetypes.vim
+
+" Load functions
+
+source $MODULES/functions.vim
+
+" useful stuff
 noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
-" Automatic commands
-if has("autocmd")
-	" Enable file type detection
-	filetype on
-	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-	" Treat .md files as Markdown
-	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
-endif
+
