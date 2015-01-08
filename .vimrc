@@ -6,7 +6,7 @@ let g:solarized_termtrans=1
 " Make Vim more useful
 set nocompatible
 
-" Vundle support {
+" Vundle support + plugins {
 
   " Keep .vimrc clean. Load stuff from different .vim files
   " inspired by https://github.com/ddellaquila/dd-vim
@@ -105,13 +105,29 @@ endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
-" Load filetypes
+" Load external files {
 
-source $MODULES/filetypes.vim
+  " Load custom settings
 
-" Load functions
+  source $MODULES/custom.vim
 
-source $MODULES/functions.vim
+  " Load keymapping
+
+  source $MODULES/mappings.vim
+
+  " Load filetypes
+
+  source $MODULES/filetypes.vim
+
+  " Load functions
+
+  source $MODULES/functions.vim
+
+  " Load iabbrev macros
+
+  source $MODULES/abbreviations.vim
+
+" }
 
 " useful stuff
 noremap <leader>ss :call StripWhitespace()<CR>
