@@ -66,6 +66,7 @@
 		"SublimeLinter-php",
 		"SublimeLinter-pylint",
 		"SublimeLinter-ruby",
-		"SublimeLinter-xmllint"
+		"SublimeLinter-xmllint",
+		"VimL"
 	]
 }
