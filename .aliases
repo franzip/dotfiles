@@ -97,6 +97,8 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 # sudo is required
 alias fixpermissions="diskutil repairPermissions /"
+# Syswide (combine previous aliases)
+alias sysclean="dscleanup; emptytrash; fixpermissions"
 
 # ============================================================================
 #                               Updates
