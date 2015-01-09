@@ -75,11 +75,13 @@ alias g="git"
 # avoid forking new processes
 alias v="mvim -f"
 alias fs="stat -f \"%z bytes\""
+alias f="find . -name "
 alias h="history"
 alias j="jobs"
 # `cat` with beautiful colors. requires Pygments installed.
 #                  sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
+
 
 # ============================================================================
 #                                 Upkeep
@@ -107,16 +109,17 @@ alias sysclean="dscleanup; emptytrash; fixpermissions"
 # Ruby gems
 alias gemupdate="gem update --system; gem update"
 # Homebrew / Cask
-alias brewupdate="brew update; brew upgrade; brew cask update; brew cleanup; brew cask cleanup"
+alias brewupdate="brew update; brew upgrade; brew cask update; brew cleanup; brew cask cleanup; brew doctor"
 # Node & npm
 alias nodeupdate="npm install npm -g; npm update -g"
 # Syswide (combine previous aliases)
-alias sysupdate="sudo softwareupdate -i -a; brewupdate; gemupdate; nodeupdate"
+alias sysupdate="sudo softwareupdate -i -a; gemupdate; nodeupdate; brewupdate"
 
 # ============================================================================
 #                          Networking Utils
 # ============================================================================
 
+alias hosts="sudo open /etc/hosts"
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
@@ -150,6 +153,10 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
+# List installed homebrew/cask packages
+alias brewery="brew list"
+alias cellar="brew cask list"
+
 # Get week number
 alias week='date +%V'
 
@@ -180,8 +187,14 @@ alias spoton="sudo mdutil -a -i on"
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
 
+# Merge PDF files
+# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+
 # Trim new lines and copy to clipboard
 alias trimcopy="tr -d '\n' | pbcopy"
+
+command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
