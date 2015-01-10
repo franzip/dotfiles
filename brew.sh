@@ -79,6 +79,7 @@ brew install openssl
 brew install pngcheck
 brew install socat
 brew install ssh-copy-id
+brew install sshrc
 brew install sqlmap
 brew install tmux
 brew install tcpflow

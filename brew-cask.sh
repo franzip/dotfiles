@@ -12,6 +12,7 @@ brew cask install flux
 brew cask install evernote
 brew cask install gpgtools
 brew cask install gyazo
+brew cask install rescuetime
 brew cask install skype
 brew cask install spotify
 brew cask install the-unarchiver
