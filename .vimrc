@@ -25,7 +25,8 @@ set nocompatible
   filetype plugin indent on
 
 " }
-
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 " Enhance command-line completion
