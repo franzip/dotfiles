@@ -93,6 +93,8 @@ checkvundle() {
 checkvundle
 unset -f checkvundle
 
+mvim +PluginInstall
+
 # change to bash 4 (installed by homebrew)
 echo "Switching to Bash 4..."
 BASHPATH=$(brew --prefix)/bin/bash
