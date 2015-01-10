@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash --login
 
 function installGems() {
   # make sure we're up to date
@@ -9,6 +9,8 @@ function installGems() {
   gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2 --use-system-libraries
   # install db adapters
   gem install sqlite3
+  # should mysql2 eventually complain about missing mysql.h
+  # give a look here https://coderwall.com/p/c0eqma/gem-install-mysql2-failed-on-mac-mysql-h-is-missing
   gem install mysql2 -- --with-mysql-dir=/usr/local/opt/mysql/
   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
   gem install mongodb
@@ -31,8 +33,8 @@ echo "gem: --no-rdoc --no-ri" > ~/.gemrc
 echo "Switching to global gemset and dumping installed gemlist/gems..."
 rvm gemset use global
 ruby -v && rvm gemset list && gem list
-
-read -p "Do you want to proceed?" -n 1;
+echo ""
+read -p "Do you want to proceed? " -n 1;
 echo "";
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   installGems;
