@@ -6,22 +6,27 @@ This is basically a mashup of the best dotfiles repos out there (Mathias Bynens'
 
 Please refer to [Mathias' awesome docs](https://github.com/mathiasbynens/dotfiles).
 Pretty much everything there applies here too.
+
 In order to work, some things (vim and sublime text) require you to fork the repo on your Dropbox root folder (see more below).
+
 Besides the "usual" installs, there are also additional scripts to set up additional stuff (gems, node_modules, etc).
 
 ## Please read this. Carefully.
 
-Everyone has their own taste. *DO NOT proceed to install anything before you read the source* or you'll end up messing your system with settings you don't like (yeah you can always revert, but you'll be wasting time).
+Everyone has their own taste. **DO NOT proceed to install anything before you read the source** or you'll end up messing your system with settings you don't like (yeah you can always revert, but you'll be wasting time).
 
 ### Sublime Text 3
 I added my Sublime Text 3 config folder ([which I like to keep synced through Dropbox on different machines](https://packagecontrol.io/docs/syncing)).
+
 If you like my ST3 settings it would be ideal for you to clone/fork the repo directly on your Dropbox: that way you are ready to go.
 Otherwise, just comment out/remove the sublime section in the .osx file.
-A lot of plugins I use have node/gems dependencies, so ST3 will complain if they aren't installed.
+
+Several plugins have node/gems dependencies, so ST3 will complain if they aren't installed.
 
 ### Vim
 Vundle has been added to Vim (I tried to make .vimrc more modular following [this example](https://github.com/ddellaquila/dd-vim), so you'll find additional config files in .vim/modules).
 The install-deps script will provide to install Vundle, so before you ask, you don't need to install it manually.
+
 If you want to use my plugin list, you just need to run :PluginInstall the first time you load vim and Vundle will work its the magic.
 You can also run "vim +PluginInstall +qall" from the prompt to achieve the same result.
 
