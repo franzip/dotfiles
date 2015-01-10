@@ -221,10 +221,20 @@ function a() {
 # given location
 function v() {
 	if [ $# -eq 0 ]; then
-		vim .;
+		mvim -f .;
 	else
-		vim "$@";
+		mvim -f "$@";
 	fi;
+}
+
+# `v`i with no arguments opens the current directory in Vim, otherwise opens the
+# given location
+function vi() {
+  if [ $# -eq 0 ]; then
+    vim .;
+  else
+    vim "$@";
+  fi;
 }
 
 # `o` with no arguments opens the current directory, otherwise opens the given
@@ -243,4 +253,33 @@ function o() {
 # small enough for one screen.
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+}
+
+# switch stuff version quickly
+# Python
+function spython() {
+  echo ""
+  pyenv versions
+  echo ""
+  read -p "Below are listed all the Python versions installed by pyenv. Insert the one you want to use as default (must match exactly!).
+  ";
+  pyenv global $REPLY
+}
+
+# Nodejs
+function snode() {
+  echo ""
+  nave ls
+  read -p "Below are listed all the Node.js versions installed by nave. Insert the one you want to use as default (must match exactly!).
+  ";
+  nave usemain $REPLY
+}
+
+# Rvm gemset
+function sgemset() {
+  echo ""
+  rvm gemset list
+  read -p "Below are listed all the gemsets installed by rvm. Insert the one you want to use as default (must match exactly!).
+  ";
+  rvm gemset use $REPLY
 }
