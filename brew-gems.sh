@@ -19,6 +19,7 @@ function installGems() {
   gem install sass
   gem install less
   gem install compass
+  gem install coffee-script
   # testing
   gem install rspec
   gem install cucumber
