@@ -27,8 +27,10 @@ Several plugins have node/gems dependencies, so ST3 will complain if they aren't
 Vundle has been added to Vim (I tried to make .vimrc more modular following [this example](https://github.com/ddellaquila/dd-vim), so you'll find additional config files in .vim/modules).
 The install-deps script will provide to install Vundle, so before you ask, you don't need to install it manually.
 
-If you want to use my plugin list, you just need to run :PluginInstall the first time you load vim and Vundle will work its the magic.
-You can also run "vim +PluginInstall +qall" from the prompt to achieve the same result.
+#### plugins.vim
+The main install script also provides to install the core Vim plugins I use. If you wish to avoid this, just remove or comment out the whole .vim/modules/plugins.vim
+
+Plugins.vim contains also plugins for syntax specific support: those are commented out, to install them just uncomment and run `:PluginInstall` inside vim or `vim +PluginInstall` from the shell.
 
 ## ChangeLog
 
