@@ -1,4 +1,7 @@
 # Fonts I like
+#
+brew cleanup
+
 brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 brew cask install font-source-serif-pro
