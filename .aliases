@@ -105,11 +105,11 @@ alias sysclean="dscleanup; emptytrash; fixpermissions"
 # ============================================================================
 
 # Ruby gems and rvm
-alias gemupdate="rvm get stable; gem update --no-document; gem update --system --no-document"
+alias gemupdate="rvm get stable; rvm gemset use global; gem update --no-document; gem update --system --no-document; gem cleanup"
 # Homebrew / Cask
-alias brewupdate="brew update; brew upgrade; brew cask update; brew cleanup; brew cask cleanup; brew doctor"
+alias brewupdate="brew update; brew upgrade; brew cleanup; cask update; cask cleanup; cask cleanup; brew doctor"
 # Node & npm
-alias nodeupdate="npm install npm -g; npm update -g"
+alias nodeupdate="npm cache clean; npm install npm -g; npm update -g"
 # Syswide (combine previous aliases)
 alias sysupdate="sudo softwareupdate -i -a; gemupdate; nodeupdate; brewupdate"
 
