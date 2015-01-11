@@ -697,7 +697,7 @@ defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 # Install Sublime Text settings (Dropbox sync with symlink)
 # https://packagecontrol.io/docs/syncing
 rm -r ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s ~/Dropbox/dotfiles/init/sublime3/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s ~/Dropbox/dotfiles/sublime ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 # Add sublime to bins. Avoid cluttering $HOME, link to /usr/local instead
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
