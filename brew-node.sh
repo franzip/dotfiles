@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+npm cache clean
 npm install node-gyp -g
 npm install npm -g
 npm update -g
