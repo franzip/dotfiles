@@ -36,6 +36,7 @@ brew doctor
 echo "Installing rvm..."
 # rvm is cool, end of the story
 curl -L https://get.rvm.io | bash -s stable --ruby
+rvm --default use ruby-2.2.0
 
 echo "Installing Vundle for vim..."
 # Install Vundle
