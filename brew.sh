@@ -107,11 +107,17 @@ brew install speedtest_cli
 brew install tree
 brew install webkit2png
 brew install zopfli
+# Enable HTML5 support in tidy
+# https://github.com/w3c/tidy-html5
+brew install homebrew/dupes/tidy --HEAD
+# install heroku toolbelt standalone and update client
+brew install heroku-toolbelt
+heroku update
 
 echo "# use GNU utils" >> ~/.path
 echo "export PATH=\"$(brew --prefix coreutils)/libexec/gnubin:$PATH\"" >> ~/.path
 # except for ls... http://stackoverflow.com/questions/26585868/gnu-ls-from-coreutils-missing-os-x-acl-implementation
-mv /usr/local/opt/coreutils/libexec/gnubin/ls /usr/local/opt/coreutils/libexec/gnubin/ls_backup
+mv /usr/local/opt/coreutils/libexec/gnubin/ls /usr/local/opt/coreutils/libexec/gnubin/ls_gnu
 ln -s /bin/ls /usr/local/opt/coreutils/libexec/gnubin/ls
 
 # Remove outdated versions from the cellar.
