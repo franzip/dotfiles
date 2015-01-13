@@ -69,7 +69,7 @@ while true; do
   if [[ $REPLY =~ ^[qQ]$ ]]; then
     exit;
   else
-    pyenv install $REPLY
+    pyenv global $REPLY
   fi;
 done
 

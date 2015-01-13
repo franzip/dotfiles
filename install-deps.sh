@@ -49,10 +49,6 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "Installing nave and node.js"
 brew install node
 brew install nave
-# install stable node version through nave
-nave install stable
-# and set it as system node version
-nave usemain stable
 
 # install all the things
 echo "Proceeding with the main install. This will take a looooot of time... go get a coffee. Many of them actually."
