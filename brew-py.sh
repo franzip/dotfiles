@@ -28,6 +28,9 @@ python -c 'import matplotlib; print matplotlib.__version__'
 sleep 5
 
 # pyenv is so awesome!
+# It seems that the annoying homebrew warnings about shims are non avoidable btw.
+# https://github.com/yyuu/pyenv/issues/106
+# https://github.com/yyuu/pyenv/issues/42
 echo "Installing pyenv..."
 brew install pyenv
 brew install pyenv-virtualenv
