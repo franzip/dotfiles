@@ -42,10 +42,9 @@ echo "Installing Vundle for vim..."
 # Install Vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# You may want to install node directly through nave.
-# This will lead 'brew doctor' to display annoying warnings.
-# To avoid it, you can whitelist things in /usr/local/Library/Homebrew/cmd/doctor.rb:120
-# See details here: http://superuser.com/a/839427
+# You can install node directly through nave
+# Beware, installing both brewed and nave's node could lead to annoying homebrew's warnings.
+# Just avoid to issue 'nave usemain version' (as this overwrite usr/local/bin/node)
 echo "Installing nave and node.js"
 brew install node
 brew install nave
