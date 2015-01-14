@@ -1,5 +1,37 @@
+--color-filename=bold red
+--color-match=bold white
+--color
+
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=vendor
+--ignore-dir=coverages/
 --ignore-dir=public/generated
+
 --sort-files
+
+--pager=less -iqRS
+
+# HAML & SASS
+--type-add=ruby=.haml,.sign.update(data)ass,.scss
+--type-add=html=.haml
+--type-add=css=.sass,.scss
+# Ruby
+--type-add=ruby=Rakefile,Capfile,Gemfile
+# Cucumber
+--type-set=cucumber=.feature
+# CoffeeScript
+--type-set=coffeescript=.coffee
+# JSON
+--type-set=json=.json
+--type-add=js=.json
+--type-add=yaml=.json
+# Conf
+--type-set=conf=.conf,.config
+# Markdown, Textile, Rdoc & POD
+--type-set=markdown=.markdown,.md,.mdown,.mkd,.mkdn
+--type-set=textile=.textile
+--type-set=rdoc=.rdoc
+--type-set=pod=.pod
+# documentation
+--type-set=documentation=.markdown,.md,.mdown,.mkd,.mkdn,.textile,.rdoc,.pod.txt
