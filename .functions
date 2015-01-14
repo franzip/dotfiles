@@ -254,32 +254,3 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
-
-# switch stuff version quickly
-# Python
-function spython() {
-  echo ""
-  pyenv versions
-  echo ""
-  read -p "Below are listed all the Python versions installed by pyenv. Insert the one you want to use as default (must match exactly!).
-  ";
-  pyenv global $REPLY
-}
-
-# Nodejs
-function snode() {
-  echo ""
-  nave ls
-  read -p "Below are listed all the Node.js versions installed by nave. Insert the one you want to use as default (must match exactly!).
-  ";
-  nave usemain $REPLY
-}
-
-# Rvm gemset
-function sgemset() {
-  echo ""
-  rvm gemset list
-  read -p "Below are listed all the gemsets installed by rvm. Insert the one you want to use as default (must match exactly!).
-  ";
-  rvm gemset use $REPLY
-}
