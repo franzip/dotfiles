@@ -1,7 +1,7 @@
 {
   "extensions": [
     ".vimrc",
-    ".gvimrc"
-
+    ".gvimrc",
+    "vim"
   ]
 }
