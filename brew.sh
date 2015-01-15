@@ -52,8 +52,10 @@ brew install vim --override-system-vi
 brew install macvim
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
+brew install homebrew/dupes/openssh
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
+brew install automake
 brew install bfg
 brew install binutils
 brew install binwalk
@@ -66,13 +68,17 @@ brew install dns2tcp
 brew install fcrackzip
 brew install foremost
 brew install gcc
+brew install gettext
+brew install gmp
 brew install hashpump
 brew install hydra
 brew install john
+brew install jpeg
 brew install knock
+brew install libevent
 brew install libxml2
 brew install libxslt
-
+brew install mcrypt
 brew install nmap
 brew install ngrep
 brew install openssl
@@ -95,13 +101,17 @@ brew install ack
 brew install ffmpeg --with-libvpx
 brew install git
 brew install imagemagick --with-webp
+brew install icu4c
 brew install lua
 brew install lynx
+brew install libtool
+brew install mhash
 brew install p7zip
 brew install pcre
 brew install pigz
 brew install pv
 brew install rename
+brew install re2c
 brew install rhino
 brew install speedtest_cli
 brew install tree
