@@ -28,7 +28,6 @@ brew tap caskroom/versions
 
 brew update
 brew upgrade brew-cask
-brew update
 brew cleanup
 brew cask cleanup
 brew doctor
