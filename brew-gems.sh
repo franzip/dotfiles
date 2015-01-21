@@ -9,8 +9,7 @@ function installGems() {
   gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2 --use-system-libraries
   # install db adapters
   gem install sqlite3
-  # should mysql2 fail, just ls into brew --cellar mysql to find out your version and retry
-  gem install mysql2 -- --with-mysql-config=/usr/local/Cellar/mysql/5.6.22/bin/mysql_config
+  gem install mysql2 -- --with-mysql-config=/usr/local/bin/mysql_config
   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
   gem install mongodb
   # global assets
