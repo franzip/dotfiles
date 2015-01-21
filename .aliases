@@ -110,9 +110,9 @@ alias gemupdate="rvm get stable; rvm gemset use global; gem update --no-document
 alias brewupdate="brew update; brew upgrade; brew cleanup; cask update; cask cleanup; cask cleanup; brew doctor"
 # Node & npm
 alias nodeupdate="npm cache clean; npm install npm -g; npm update -g"
-# Syswide (combine previous aliases)
 # phpbrew
 alias phpupdate="phpbrew self-update; phpbrew known --update; phpbrew clean"
+# Syswide (combine previous aliases)
 alias sysupdate="sudo softwareupdate -i -a; gemupdate; nodeupdate; phpupdate; brewupdate"
 
 # ============================================================================
