@@ -2,6 +2,8 @@ brew update
 brew upgrade
 brew cask update
 
+echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' > ~/.path
+
 # messaging
 brew cask install adium
 
