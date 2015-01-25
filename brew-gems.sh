@@ -27,6 +27,7 @@ function installGems() {
   gem install cucumber
   gem install rspec-mocks
   gem install rspec-expectations
+  gem install launchy
   gem install shoulda
   gem install factory_girl
   # img
