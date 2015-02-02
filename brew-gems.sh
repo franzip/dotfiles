@@ -30,6 +30,7 @@ function installGems() {
   gem install launchy
   gem install shoulda
   gem install factory_girl
+  gem install fakeweb
   # img
   gem install rmagick
   # metrics
