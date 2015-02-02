@@ -1,5 +1,6 @@
 export EDITOR="mvim -f";
 export VISUAL="subl";
+export GIT_EDITOR="vim";
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768;
