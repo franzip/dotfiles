@@ -10,6 +10,7 @@ brew cask install adium
 # daily
 brew cask install caffeine
 brew cask install dropbox
+brew cask install google-drive
 brew cask install flux
 brew cask install evernote
 brew cask install gpgtools
