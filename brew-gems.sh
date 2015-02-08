@@ -31,6 +31,7 @@ function installGems() {
   gem install shoulda
   gem install factory_girl
   gem install fakeweb
+  gem install jasmine
   # img
   gem install rmagick
   # metrics
@@ -72,6 +73,8 @@ function railsGems() {
   gem install rspec-rails
   gem install cucumber-rails
   gem install factory_girl_rails
+  gem install jasmine-rails
+  gem install jasmine-jquery-rails
   # forms
   gem install formtastic
   gem install simple_form
