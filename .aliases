@@ -107,13 +107,13 @@ alias sysclean="dscleanup; emptytrash; fixpermissions"
 # Ruby gems and rvm
 alias gemupdate="rvm get stable; rvm gemset use global; gem update --no-document; gem update --system --no-document; gem cleanup"
 # Homebrew / Cask
-alias brewupdate="brew update; brew upgrade; brew cleanup; cask update; cask cleanup; cask doctor; brew doctor"
+alias brewupdate="brew update; brew upgrade --all; brew cleanup; cask update; cask cleanup; cask doctor; brew doctor"
 # Node & npm
 alias nodeupdate="npm cache clean; npm install npm -g; npm update -g"
 # phpbrew
 alias phpupdate="composer selfupdate; phpbrew self-update; phpbrew known --update; phpbrew clean"
 # Syswide (combine previous aliases)
-alias sysupdate="sudo softwareupdate -i -a; gemupdate; nodeupdate; phpupdate; brewupdate"
+alias sysupdate="sudo softwareupdate -i -a; brewupdate; gemupdate; nodeupdate; phpupdate"
 
 # ============================================================================
 #                          Networking Utils
