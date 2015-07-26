@@ -49,6 +49,7 @@ function installGems() {
   gem install pry
   # Jekyll
   gem install jekyll
+  gem install github
 }
 
 function railsGems() {
@@ -119,7 +120,7 @@ echo ""
 read -p "Do you want to proceed? " -n 1;
 echo "";
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-  rvm use ruby-2.2.0@rails4.2 --create
+  rvm use ruby-2.2.2@rails4.2 --create
   railsGems;
 else
   echo "Aborted."; exit;

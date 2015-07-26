@@ -12,7 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade
+brew upgrade --all
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -29,7 +29,7 @@ brew install gnu-tar
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew install bash-completion
+brew install bash-completion2
 
 # Install more GNU stuff
 
@@ -45,14 +45,11 @@ brew install grc
 brew install ringojs
 brew install narwhal
 
-# Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
-# Don't override here, use aliases instead and keep normal vim
-# MacVim fullscreen mode is messed up and doesn't work well in Yosemite.
-brew install macvim
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
 brew install homebrew/dupes/openssh
+
+brew install gh
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install automake
@@ -100,6 +97,7 @@ brew install ack
 #brew install exiv2
 brew install ffmpeg --with-libvpx
 brew install git
+brew install go
 brew install imagemagick --with-webp
 brew install icu4c
 brew install lua

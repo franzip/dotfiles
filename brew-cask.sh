@@ -1,16 +1,17 @@
+#!/usr/bin/env bash
+
 brew update
 brew upgrade
 brew cask update
 
-echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.path
-
-# messaging
-brew cask install adium
-
 # daily
+brew cask install android-file-transfer
+brew cask install asepsis
 brew cask install caffeine
 brew cask install dropbox
 brew cask install google-drive
+brew cask install google-hangouts
+brew cask install goofy
 brew cask install flux
 brew cask install evernote
 brew cask install gpgtools
@@ -18,6 +19,7 @@ brew cask install gyazo
 brew cask install rescuetime
 brew cask install skype
 brew cask install spotify
+brew cask install spotify-notifications
 brew cask install the-unarchiver
 brew cask install utorrent
 brew cask install virtualbox

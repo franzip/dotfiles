@@ -111,7 +111,7 @@ alias brewupdate="brew update; brew upgrade --all; brew cleanup; cask update; ca
 # Node & npm
 alias nodeupdate="npm cache clean; npm install npm -g; npm update -g"
 # phpbrew
-alias phpupdate="composer selfupdate; phpbrew self-update; phpbrew known --update; phpbrew clean"
+alias phpupdate="composer selfupdate; phpbrew self-update; phpbrew known --update"
 # Syswide (combine previous aliases)
 alias sysupdate="sudo softwareupdate -i -a; brewupdate; gemupdate; nodeupdate; phpupdate"
 
@@ -125,8 +125,8 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 # View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 # Enhanced WHOIS lookups
 alias whois="whois -h whois.internic.net"
 # One of @janmoesen’s ProTip™s

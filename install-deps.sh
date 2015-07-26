@@ -35,11 +35,8 @@ brew doctor
 echo "Installing rvm..."
 # rvm is cool, end of the story
 curl -L https://get.rvm.io | bash -s stable --ruby
-rvm --default use ruby-2.2.0
-
-echo "Installing Vundle for vim..."
-# Install Vundle
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+rvm install ruby
+rvm --default use ruby-2.2.2
 
 # You can install node directly through nave
 # Beware, installing both brewed and nave's node could lead to annoying homebrew's warnings.
@@ -74,21 +71,6 @@ echo `rvm -v`
 # "rvm is a function" test
 # this will probably fail right now, just a reminder to source rvm
 echo `type rvm | head -n 1`
-# check if Vundle was installed correctly
-echo "Setting .vimrc in place..."
-
-cp ~/Dropbox/dotfiles/.vimrc ~/.vimrc
-checkvundle() {
-  if gvim +PluginList 2>/dev/null; then
-      echo "Vundle is installed, yay!"
-  else
-      echo "Something went wrong with Vundle install. Check your ~/.vim"
-  fi
-}
-checkvundle
-unset -f checkvundle
-
-mvim +PluginInstall
 
 # change to bash 4 (installed by homebrew)
 echo "Switching to Bash 4..."
@@ -103,4 +85,3 @@ echo $BASH && echo $BASH_VERSION
 brew cleanup
 brew cask cleanup
 brew doctor
-

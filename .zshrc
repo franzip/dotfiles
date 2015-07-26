@@ -49,7 +49,7 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git brew colored-man composer gem github osx python pyenv rails vagrant symfony2 zsh-syntax-highlighting)
 
 # User configuration
 
@@ -87,6 +87,7 @@ eval `dircolors $HOME/.dircolors`
 source $ZSH_CUSTOM/.aliases
 source $ZSH_CUSTOM/.extra
 source $ZSH_CUSTOM/.exports
-source $ZSH_CUSTOM/.bash_profile
+source $ZSH_CUSTOM/.functions
+source $ZSH_CUSTOM/.zsh_profile
 source $ZSH_CUSTOM/.zshenv
 source $ZSH_CUSTOM/.path

@@ -11,6 +11,7 @@ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 # It's lightweight, it's cool
 brew cask install sequel-pro
+brew install phpmyadmin
 
 # Install pgsql (autostart daemon on login)
 brew install postgres

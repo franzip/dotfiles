@@ -1,5 +1,5 @@
-# Fonts I like
-#
+#!/usr/bin/env bash
+
 brew cleanup
 
 brew cask install font-source-code-pro

@@ -10,8 +10,6 @@
 
 --sort-files
 
---pager=less -iqRS
-
 # HAML & SASS
 --type-add=ruby=.haml,.sign.update(data)ass,.scss
 --type-add=html=.haml
