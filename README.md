@@ -23,14 +23,14 @@ Otherwise, just comment out/remove the sublime section in the .osx file.
 
 Several plugins have node/gems dependencies, so ST3 will complain if they aren't installed.
 
+### oh-my-zsh
+Bash 4 gets installed as default shell but you can install zsh and oh-my-zsh
+by running zsh.sh.
+
 ### Vim
-Vundle has been added to Vim (I tried to make .vimrc more modular following [this example](https://github.com/ddellaquila/dd-vim), so you'll find additional config files in .vim/modules).
-The install-deps script will provide to install Vundle, so before you ask, you don't need to install it manually.
-
-#### plugins.vim
-The main install script also provides to install the core Vim plugins I use. If you wish to avoid this, just remove or comment out the whole .vim/modules/plugins.vim
-
-Plugins.vim contains also plugins for syntax specific support: those are commented out, to install them just uncomment and run `:PluginInstall` inside vim or `vim +PluginInstall` from the shell.
+Use [spf13-vim](https://github.com/spf13/spf13-vim)
+Take note that Vim and MacVim will be installed without Lua support, as that
+causes tons of crash on my system with neocomplete installed.
 
 ## ChangeLog
 
@@ -42,8 +42,11 @@ Plugins.vim contains also plugins for syntax specific support: those are comment
 * Added a .gemrc file
 * Added a lot of formulae. Just check brew-*.sh files.
 * The install script now provides some rudimental checks to see if everything got installed correctly (node, rvm, etc).
-* brew-fonts.sh installs a bunch of fonts I like.
-* brew-dbs.sh sets up the following databases: mysql, pgsql, sqlite, mongodb.
-* brew-gems.sh installs some basic gems (nokogiri, haml, sass, rspec, etc.) and creates a rvm gemset for rails 4.2.
-* brew-node.sh installs basic modules (yo, bower, grunt etc) and ST3 dependencies.
-* brew-py.sh bootstraps a basic Python dev environment using pyenv.
+* Added zsh and oh-my-zsh
+* brew-fonts.sh Installs a bunch of fonts I like.
+* brew-dbs.sh Sets up the following databases: mysql, pgsql, sqlite, mongodb.
+* brew-gems.sh Installs useful gems (nokogiri, haml, sass, rspec, etc.) and creates a rvm gemset for Rails 4.2.
+* brew-node.sh Installs basic modules (yo, bower, grunt etc) and ST3 dependencies.
+* brew-py.sh Bootstraps a basic Python dev environment using pyenv.
+* brew-scala.sh Installs Scala deps.
+* brew-php.sh Installs phpbrew
