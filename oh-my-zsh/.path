@@ -2,6 +2,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # START PHPBREW
+source $HOME/.phpbrew/bashrc
 source $ZSH_CUSTOM/.phpbrew
 export PATH="~/.phpbrew/bin:$PATH"
 # END PHPBREW

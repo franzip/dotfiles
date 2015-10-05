@@ -34,7 +34,6 @@ sleep 5
 echo "Installing pyenv..."
 brew install pyenv
 brew install pyenv-virtualenv
-brew install pyenv-pip-rehash
 # Set pyenv env vars
 echo "Installing pyenv..."
 echo "# START PYENV" >> ~/.path

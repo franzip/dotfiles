@@ -117,7 +117,7 @@ brew install webkit2png
 brew install zopfli
 # Enable HTML5 support in tidy
 # https://github.com/w3c/tidy-html5
-brew install homebrew/dupes/tidy --HEAD
+brew install tidy-html5
 # install heroku toolbelt standalone and update client
 brew install heroku-toolbelt
 heroku update
