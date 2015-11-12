@@ -29,6 +29,7 @@ brew cask install vlc
 brew cask install google-chrome
 brew cask install firefox
 brew cask install torbrowser
+brew cask install slack
 
 # dev
 brew cask install atom
