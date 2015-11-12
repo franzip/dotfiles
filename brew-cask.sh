@@ -18,6 +18,7 @@ brew cask install gpgtools
 brew cask install gyazo
 brew cask install rescuetime
 brew cask install skype
+brew cask install slack
 brew cask install spotify
 brew cask install spotify-notifications
 brew cask install the-unarchiver
@@ -29,11 +30,11 @@ brew cask install vlc
 brew cask install google-chrome
 brew cask install firefox
 brew cask install torbrowser
-brew cask install slack
 
 # dev
 brew cask install atom
 brew cask install iterm2
+brew cask install mysqlworkbench
 brew cask install nitrous-desktop
 brew cask install vagrant
 brew cask install vagrant-manager
