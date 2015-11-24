@@ -28,18 +28,14 @@ brew cask install vlc
 
 # browsers
 brew cask install google-chrome
+brew cask install google-chrome-canary
 brew cask install firefox
 brew cask install torbrowser
 
 # dev
 brew cask install atom
+brew cask install sublime-text3
 brew cask install iterm2
 brew cask install mysqlworkbench
-brew cask install nitrous-desktop
 brew cask install vagrant
 brew cask install vagrant-manager
-
-# misc
-brew cask install imageoptim
-brew cask install miro-video-converter
-brew cask install disk-inventory-x

@@ -1,8 +1,16 @@
+autocmd FileType ruby,javascript,json setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType php,html,python,yml setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
+
 set background=dark
 colorscheme solarized
-set guifont=Inconsolata\ for\ Powerline:h16
+let g:solarized_termtrans=0
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
+set guifont=Inconsolata\ for\ Powerline:h18
+
 set visualbell
 set nospell
-let g:solarized_termtrans=1
+
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+

@@ -36,7 +36,7 @@ echo "Installing rvm..."
 # rvm is cool, end of the story
 curl -L https://get.rvm.io | bash -s stable --ruby
 rvm install ruby
-rvm --default use ruby-2.2.2
+rvm --default use ruby-2.2.3
 
 # You can install node directly through nave
 # Beware, installing both brewed and nave's node could lead to annoying homebrew's warnings.

@@ -97,6 +97,7 @@ brew install ack
 #brew install exiv2
 brew install ffmpeg --with-libvpx
 brew install git
+brew install git-flow
 brew install go
 brew install imagemagick --with-webp
 brew install icu4c

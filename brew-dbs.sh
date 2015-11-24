@@ -15,7 +15,7 @@ brew install phpmyadmin
 
 # Install pgsql (autostart daemon on login)
 brew install postgres
-initdb /usr/local/var/postgres
+initdb /usr/local/var/postgres -E utf8
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
 # Install mongodb (autostart daemon on login)

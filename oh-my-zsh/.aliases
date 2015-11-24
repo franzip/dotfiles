@@ -17,6 +17,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias pj="cd ~/Projects"
 alias wk="cd ~/Work"
+alias st="cd ~/Sites"
 
 # ============================================================================
 #                                `ls` aliases
@@ -107,7 +108,7 @@ alias sysclean="dscleanup; emptytrash; fixpermissions"
 # ============================================================================
 
 # Ruby gems and rvm
-alias gemupdate="rvm get stable; rvm gemset use global; gem update --no-document; gem update --system --no-document; gem cleanup"
+alias gemupdate="rvm get stable; rvm reload; rvm gemset use global; gem update --no-document; gem update --system --no-document; gem cleanup"
 # Homebrew / Cask
 alias brewupdate="brew update; brew upgrade --all; brew cleanup; cask update; cask cleanup; cask doctor; brew doctor"
 # Node & npm
@@ -121,7 +122,7 @@ alias sysupdate="sudo softwareupdate -i -a; brewupdate; gemupdate; nodeupdate; p
 #                          Networking Utils
 # ============================================================================
 
-alias hosts="sudo $VISUAL /etc/hosts"
+alias hosts="sudo vim /etc/hosts"
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
@@ -158,6 +159,9 @@ alias sudo='sudo '
 # List installed homebrew/cask packages
 alias brewery="brew list"
 alias cellar="brew cask list"
+
+# List globally installed node_modules
+alias node_modules="ls -1 /usr/local/lib/node_modules"
 
 # Get week number
 alias week='date +%V'

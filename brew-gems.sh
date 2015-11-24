@@ -1,6 +1,6 @@
 #!/usr/bin/env bash --login
 
-function installGems() {
+function globalGems() {
   # make sure we're up to date
   gem update --system
   gem update
@@ -108,11 +108,11 @@ echo ""
 read -p "Do you want to proceed? " -n 1;
 echo "";
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-  installGems;
+  globalGems;
 else
   echo "Aborted."; exit;
 fi;
-unset -f installGems;
+unset -f globalGems;
 
 echo ""
 echo "Installing rails 4.2 and a bunch of gems..."
@@ -120,7 +120,7 @@ echo ""
 read -p "Do you want to proceed? " -n 1;
 echo "";
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-  rvm use ruby-2.2.1@rails4.2 --create
+  rvm use ruby-2.2.3@rails4.2.4 --create
   railsGems;
 else
   echo "Aborted."; exit;

@@ -3,11 +3,11 @@
 	"auto_match_enabled": true,
 	"bold_folder_labels": true,
 	"caret_style": "solid",
-	"color_scheme": "Packages/User/Solarized (Dark) (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Asphalt (SL).tmTheme",
 	"detect_indentation": false,
 	"draw_indent_guides": true,
 	"draw_minimap_border": true,
-	"draw_white_space": "selection",
+	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -33,7 +33,6 @@
 		"*.sublime-workspace"
 	],
 	"find_selected_text": true,
-	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -54,15 +53,13 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 16,
+	"font_size": 15,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
-	"hot_exit": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Markdown",
-		"SublimeLinter",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -81,7 +78,7 @@
 	"match_brackets_content": true,
 	"match_brackets_square": true,
 	"open_files_in_a_new_window": false,
-	"remember_open_files": true,
+	"remember_open_files": false,
 	"remember_open_folders": true,
 	"rulers":
 	[
@@ -89,8 +86,10 @@
 	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": false,
+	"show_encoding": true,
 	"show_full_path": true,
 	"tab_size": 2,
+	"theme": "Asphalt.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
