@@ -5,23 +5,24 @@ brew update && brew upgrade && brew doctor
 # Install sqlite
 brew install sqlite
 
-# Install mysql (autostart daemon on login)
+# MySQL + autostart
 brew install mysql
-mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+mysqld --initialize --log-error-verbosity --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
-# It's lightweight, it's cool
 brew cask install sequel-pro
 brew install phpmyadmin
+brew cask install mysqlworkbench
 
-# Install pgsql (autostart daemon on login)
+# Postgres + autostart
 brew install postgres
-initdb /usr/local/var/postgres -E utf8
+initdb `brew --prefix`/var/postgres/data -E utf8
+createdb `whoami`
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
-# Install mongodb (autostart daemon on login)
+# MongoDB + autostart
 brew install mongodb
-mkdir -p /data/db
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+brew cask install robomongo
 
 # Final Checks
 
@@ -30,4 +31,3 @@ psql --version
 sqlite3 --version
 mysql --version
 echo "Reminder: set the root password: mysql -u root password 'yourpass'"
-

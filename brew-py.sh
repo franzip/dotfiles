@@ -45,35 +45,6 @@ echo "# END PYENV" >> ~/.path
 # keep rvm in front of $PATH
 echo "[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\"" >> ~/.path
 source ~/.bash_profile
-# Install all the versions you want
-while true; do
-  echo "------------------"
-  echo ""
-  pyenv install --list
-  echo ""
-  echo "------------------"
-  echo "Check the available version listed above and insert the one you want to install (must match exactly!)."
-  echo "Press q or Q to quit when you're done installing."
-  read -p "";
-  if [[ $REPLY =~ ^[qQ]$ ]]; then
-    break;
-  else
-    pyenv install $REPLY
-  fi;
-done
-echo ""
-echo ""
-# Pick a version as global
-while true; do
-  pyenv versions
-  echo "Check the installed version listed above and insert the one you want to use as default (must match exactly!). Click q or Q to exit."
-  read -p "";
-  if [[ $REPLY =~ ^[qQ]$ ]]; then
-    exit;
-  else
-    pyenv global $REPLY
-  fi;
-done
 
 echo "All done. Dumping info (versions should match):"
 which python

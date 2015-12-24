@@ -90,6 +90,7 @@
       "_": true,
       "App": true,
       "$": true,
+      "jQuery": true,
       "afterEach": true,
       "beforeEach": true,
       "describe": true,
@@ -97,9 +98,10 @@
       "getJSONFixture": true,
       "it": true,
       "jasmine": true,
+      "process": true,
+      "global": true;
       "Meteor": true,
-      "jQuery": true,
       "module": true,
       "sinon": true
-      }        // additional predefined global variables
+      }
     }

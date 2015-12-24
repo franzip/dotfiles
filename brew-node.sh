@@ -5,28 +5,33 @@ npm install node-gyp -g
 npm install npm -g
 npm update -g
 
-npm install -g grunt-cli grunt bower yo gulp express jasmine karma mocha browserify react
+# basic
+npm install -g grunt-cli grunt bower gulp express jasmine karma mocha browserify
 
 # ST3 deps
-npm install -g coffee-script jshint less csslint typescript sass-lint scss_lint
+npm install -g coffee-script jshint less csslint typescript sasslint scsslint coffeelint
 
-npm install -g gulp backbone nodemon async socket.io mongoose hapi request underscore jade
+# stuff
+npm install -g backbone nodemon async socket.io mongoose hapi request forever mkdirp
 
-npm install -g lodash pm2 commander moment q passport redis nodemailer minimist
+npm install -g cordova phonegap ionic
+
+npm install -g lodash loopback pm2 debug commander moment q passport redis knockout
+
+npm install -g react nodemailer minimist chalk colors underscore jade bluebird sails
 
 # Meteor.js
 curl https://install.meteor.com/ | sh
 
-# MEAN cli
-npm install -g mean-cli
+npm install -g mean-cli ember-cli
 
-# yo generators
+# yo
 
+npm install -g yo
 npm install -g generator-angular generator-angular-fullstack generator-backbone
 npm install -g generator-karma generator-mocha generator-gulp-webapp generator-polymer
 npm install -g generator-node generator-bootstrap generator-jquery generator-mean
-npm install -g generator-webapp generator-meteor
-
+npm install -g generator-webapp generator-meteor generator-backbone-mocha
 
 # nodeschool.io ftw
 npm install -g javascripting learnyounode git-it how-to-npm scope-chains-closures stream-adventure

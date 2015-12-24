@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-brew install vim --override-system-vi --with-lua
+brew install vim --override-system-vi --with-lua --with-luajit
 
 brew install macvim --with-cscope --with-lua
 

@@ -6,7 +6,7 @@ function globalGems() {
   gem update
   # if you're running Yosemite, you're safe.
   # Otherwise look here http://stackoverflow.com/a/19807558
-  gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2 --use-system-libraries
+  gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2 --use-system-libraries
   # install db adapters
   gem install sqlite3
   gem install mysql2 -- --with-mysql-config=/usr/local/bin/mysql_config
@@ -44,6 +44,7 @@ function globalGems() {
   gem install binding_of_caller
   gem install byebug
   gem install will_paginate
+  gem install scss-lint
   # CLI utils
   gem install hirb
   gem install pry
@@ -120,7 +121,7 @@ echo ""
 read -p "Do you want to proceed? " -n 1;
 echo "";
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-  rvm use ruby-2.2.3@rails4.2.4 --create
+  rvm use ruby-2.2.1@rails4.2.5 --create
   railsGems;
 else
   echo "Aborted."; exit;

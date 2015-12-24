@@ -1,63 +1,17 @@
 #!/usr/bin/env bash
 
-# Install command line tools
-xcode-select --install
-
-# Get homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Get ready to brew
-brew update
-brew doctor
-
-echo "Tapping brew things."
-# tap all the things directly here
-brew tap homebrew/dupes
-brew tap caskroom/cask
-brew tap homebrew/python
-brew tap homebrew/apache
-brew tap homebrew/versions
-
-echo "Installing Cask..."
-# Install Cask
-brew install caskroom/cask/brew-cask
-echo "Tapping casky things."
-# tap all the things directly here
-brew tap caskroom/fonts
-brew tap caskroom/versions
-
-brew update
-brew upgrade brew-cask
-brew cleanup
-brew cask cleanup
-brew doctor
-
 echo "Installing rvm..."
-# rvm is cool, end of the story
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 curl -L https://get.rvm.io | bash -s stable --ruby
 rvm install ruby
-rvm --default use ruby-2.2.3
+rvm --default use ruby-2.2.1
 
-# You can install node directly through nave
-# Beware, installing both brewed and nave's node could lead to annoying homebrew's warnings.
-# Just avoid to issue 'nave usemain version' (as this overwrite usr/local/bin/node)
-echo "Installing nave and node.js"
+echo "Installing node.js"
 brew install node
+echo "Installing nave"
 brew install nave
 
-# install all the things
-echo "Proceeding with the main install. This will take a looooot of time... go get a coffee. Many of them actually."
-echo "Installing fonts..."
-./brew-fonts.sh
-echo "Installing bins..."
-./brew.sh
-echo "Installing shiny things..."
-./brew-cask.sh
-
 brew cleanup
-
-# for the c alias (syntax highlighted cat)
-sudo easy_install Pygments
 
 echo "Ok, install is done. Let's check if we broke anything..."
 # Nave/Node check

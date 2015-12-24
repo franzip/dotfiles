@@ -1,0 +1,4 @@
+{
+  "node_command": "/usr/local/bin/node",
+  "npm_command": "/usr/local/bin/npm"
+}

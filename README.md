@@ -1,52 +1,63 @@
-# Francesco's dotfiles.
+# My dotfiles
 
-This is basically a mashup of the best dotfiles repos out there (Mathias Bynens' and Paul Irish's above all) + my own personal tweaks.
+This is basically a mashup of the best dotfiles repos out there ([Mathias Bynens'](https://github.com/mathiasbynens) and [Paul Irish's](https://github.com/paulirish) above all) + my own personal tweaks.  
+My advice is to keep them in your Dropbox/Drive folder so that you can reuse them on multiple devices if you want to.
 
-## Usage & Installation
+## OS X Version 
 
-Please refer to [Mathias' awesome docs](https://github.com/mathiasbynens/dotfiles).
-Pretty much everything there applies here too.
+These dotfiles have been used and tried on OS X 10.10 Yosemite (I still have to upgrade to OS X 10.11), so if you have El Captain installed you could get some error and have to tweak something as you go with the install process.
 
-In order to work, some things (vim and sublime text) require you to fork the repo on your Dropbox root folder (see more below).
+## Install Scripts Description 
 
-Besides the "usual" installs, there are also additional scripts to set up additional stuff (gems, node_modules, etc).
+* **.osx**: contains lots of specific tweaks for OS X.
+* **bootstrap.sh**: copies the content of the repo in your $HOME folder through rsync.
+* **brew.sh**: installs XCode CLI Tools, Homebrew and tons of useful packages.
+* **install-deps.sh**: installs RVM, Ruby 2.2.1, NodeJS, Nave and switch Bash to version 4.
+* **brew-cask.sh**: installs a bunch of programs through the Homebrew Cask CLI.  
+Caveat: you may want to get your Casks symlinked in the /Applications folder.  
+To do that, just add this line to .bash_profile or .zshrc:  ```export HOMEBREW_CASK_OPTS="--appdir=/Applications"```
 
-## Please read this. Carefully.
+* **brew-dbs.sh**: installs and configure MySQL, Postgres, SQLite and MongoDB, along with other stuff like MySQL Workbench and Robomongo.
+* **brew-fonts.sh**: installs a bunch of fonts along with their Powerline version.
+* **brew-gems.sh**: installs a bunch of gems in the global gemset and creates a Rails specific gemset.
+* **brew-node.sh**: installs the most used node modules (you'll need some of them as dependencies in Sublime Text 3) and stuff like Meteor :heart:.
+* **brew-php.sh**: installs and configures [PHPBrew](https://github.com/phpbrew/phpbrew) and you'll also get PHPUnit, Composer and Laravel/Symfony Installers.  
+**Please note that this will NOT install a new version of PHP (you will still be running the one shipped with your Mac).** [To install PHP through PHPBrew refer to the docs.](https://github.com/phpbrew/phpbrew/wiki)
+* **brew-py.sh**: installs Python 2, PEP257, PEP8, Pylint, Numpy, Scipy, Matplotlib and [Pyenv (check it out).](https://github.com/yyuu/pyenv)
+* **brew-scala.sh**: installs SBT, Scala and the Eclipse Scala IDE.
+* **brew-systools.sh**: installs CLI tools for PaaS/IaaS/SaaS providers (AWS, Azure, Heroku), along with VirtualBox, Vagrant and Docker.
+* **vim.sh**: installs Vim and MacVim (with Lua supports) and the [spf13-vim distro](http://vim.spf13.com/).
+* **zsh.sh**: installs Zsh and [Oh-My-Zsh](http://ohmyz.sh/).
 
-Everyone has their own taste. **DO NOT proceed to install anything before you read the source** or you'll end up messing your system with settings you don't like (yeah you can always revert, but you'll be wasting time).
+## How to Install
 
-### Sublime Text 3
-I added my Sublime Text 3 config folder ([which I like to keep synced through Dropbox on different machines](https://packagecontrol.io/docs/syncing)).
+* The .osx script can be run at any moment. Anyway if you plan to install the following software, you may want to do that **BEFORE** running the .osx script, as it contains customizations for: Twitter (App Store), GPGMail, SizeUp, Chrome, Chrome Canary, iTerm.
 
-If you like my ST3 settings it would be ideal for you to clone/fork the repo directly on your Dropbox: that way you are ready to go.
-Otherwise, just comment out/remove the sublime section in the .osx file.
+### Order Dependencies 
 
-Several plugins have node/gems dependencies, so ST3 will complain if they aren't installed.
+1. bootstrap.sh 
+2. brew.sh
+3. install-deps.sh
+4. brew-dbs.sh
 
-### oh-my-zsh
-Bash 4 gets installed as default shell but you can install zsh and oh-my-zsh
-by running zsh.sh.
+These are the only order dependencies you should respect before launching any language/environment specific script (brew-py, brew-gems, ecc).  
+Apart from this you can install what you need in any order. 
 
-### Vim
-Use [spf13-vim](https://github.com/spf13/spf13-vim)
-Take note that Vim and MacVim will be installed without Lua support, as that
-causes tons of crash on my system with neocomplete installed.
+### Suggested Order
 
-## ChangeLog
+1. bootstrap.sh
+2. brew-cask.sh
+3. .osx
+4. brew.sh
+5. install-deps.sh
+6. brew-dbs.sh
+7. brew-fonts.sh
+8. brew-php.sh | brew-node.sh | brew-py.sh | brew-gems.sh | brew-scala.sh
 
-* Removed the bin/ folder.
-* Modified .vimrc to use Vundle as Vim Package Manager. Vim related stuff (plugins list, functions, etc.) is listed in the .vim/modules folder, so give it a look and see if you like what you see.
-* Added new .vim files in .vim/modules for future usage.
-* Added Sublime Text 3 settings folder.
-* The .osx script takes now care of syncing Sublime settings to Dropbox.
-* Added a .gemrc file
-* Added a lot of formulae. Just check brew-*.sh files.
-* The install script now provides some rudimental checks to see if everything got installed correctly (node, rvm, etc).
-* Added zsh and oh-my-zsh
-* brew-fonts.sh Installs a bunch of fonts I like.
-* brew-dbs.sh Sets up the following databases: mysql, pgsql, sqlite, mongodb.
-* brew-gems.sh Installs useful gems (nokogiri, haml, sass, rspec, etc.) and creates a rvm gemset for Rails 4.2.
-* brew-node.sh Installs basic modules (yo, bower, grunt etc) and ST3 dependencies.
-* brew-py.sh Bootstraps a basic Python dev environment using pyenv.
-* brew-scala.sh Installs Scala deps.
-* brew-php.sh Installs phpbrew
+## Sublime Text 3
+
+I like to keep my [Sublime settings synced across multiple devices](https://packagecontrol.io/docs/syncing).  
+If you want to use my config files, just remove your Packages/User folder and issue this command (assuming you cloned the repo in ```~/Dropbox/dotfiles/```):  
+```ln -s ~/Dropbox/dotfiles/sublime ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User```  
+
+Once you open Sublime Text, just let it do its job and install stuff.

@@ -8,11 +8,39 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Make sure we’re using the latest Homebrew.
-brew update
+# Install command line tools
+xcode-select --install
 
-# Upgrade any already-installed formulae.
+
+# Get homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Get ready to brew
+brew update
 brew upgrade --all
+brew doctor
+
+echo "Installing Cask..."
+# Install Cask
+brew tap caskroom/cask
+brew install caskroom/cask/brew-cask
+
+echo "Tapping brew things."
+# tap all the things directly here
+brew tap caskroom/versions
+brew tap homebrew/dupes
+brew tap homebrew/python
+brew tap homebrew/apache
+brew tap homebrew/php
+brew tap homebrew/science
+
+# Get ready to brew
+brew update
+brew cleanup
+brew cask cleanup
+
+# for the c alias (syntax highlighted cat)
+sudo easy_install Pygments
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -48,7 +76,6 @@ brew install narwhal
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
 brew install homebrew/dupes/openssh
-
 brew install gh
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
@@ -89,8 +116,10 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
 brew install xz
+
+# nginx
+brew install nginx
 
 # Install other useful binaries.
 brew install ack
@@ -102,6 +131,7 @@ brew install go
 brew install imagemagick --with-webp
 brew install icu4c
 brew install lua
+brew install luajit
 brew install lynx
 brew install libtool
 brew install mhash
@@ -119,9 +149,10 @@ brew install zopfli
 # Enable HTML5 support in tidy
 # https://github.com/w3c/tidy-html5
 brew install tidy-html5
-# install heroku toolbelt standalone and update client
-brew install heroku-toolbelt
-heroku update
+
+# Markdown TOC generator
+wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -O /usr/local/bin/gh-md-toc
+chmod a+x /usr/local/bin/gh-md-toc
 
 echo "# use GNU utils" >> ~/.path
 echo "export PATH=\"$(brew --prefix coreutils)/libexec/gnubin:$PATH\"" >> ~/.path

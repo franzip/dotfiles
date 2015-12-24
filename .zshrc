@@ -49,7 +49,7 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bower brew colored-man composer gem git-flow npm osx python pyenv rails vagrant zsh-syntax-highlighting)
+plugins=(git brew colored-man composer gem osx meteor python pyenv rails vagrant web-search zsh-syntax-highlighting)
 
 # User configuration
 

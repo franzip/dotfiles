@@ -1,0 +1,9 @@
+{
+	"extensions":
+	[
+		".vimrc",
+		".vimrc.local",
+		".gvimrc",
+		".gvimrc.local"
+	]
+}
