@@ -23,7 +23,6 @@ brew doctor
 echo "Installing Cask..."
 # Install Cask
 brew tap caskroom/cask
-brew install caskroom/cask/brew-cask
 
 echo "Tapping brew things."
 # tap all the things directly here
@@ -128,6 +127,7 @@ brew install ffmpeg --with-libvpx
 brew install git
 brew install git-flow
 brew install go
+brew install ngrok
 brew install imagemagick --with-webp
 brew install icu4c
 brew install lua

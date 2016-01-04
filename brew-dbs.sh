@@ -18,6 +18,7 @@ brew install postgres
 initdb `brew --prefix`/var/postgres/data -E utf8
 createdb `whoami`
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+brew cask install psequel
 
 # MongoDB + autostart
 brew install mongodb

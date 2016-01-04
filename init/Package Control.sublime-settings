@@ -65,6 +65,7 @@
         "RSpec",
         "rspec-snippets",
         "Cucumber",
+        "EJS",
         "Jade",
         "HTML Mustache",
         "Handlebars",

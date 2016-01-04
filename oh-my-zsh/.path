@@ -4,6 +4,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # START PHPBREW
 source $HOME/.phpbrew/bashrc
 source $ZSH_CUSTOM/.phpbrew
-export PATH="~/.phpbrew/bin:$PATH"
+export PATH="$HOME/.phpbrew/bin:$PATH"
 # END PHPBREW
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

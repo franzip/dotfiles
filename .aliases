@@ -18,6 +18,7 @@ alias dt="cd ~/Desktop"
 alias pj="cd ~/Projects"
 alias wk="cd ~/Work"
 alias st="cd ~/Sites"
+alias sb="cd ~/Sandbox"
 
 # ============================================================================
 #                                `ls` aliases
@@ -113,8 +114,8 @@ alias gemupdate="rvm get stable; rvm reload; rvm gemset use global; gem update -
 alias brewupdate="brew update; brew upgrade --all; brew cleanup; cask update; cask cleanup; cask doctor; brew doctor"
 # Node & npm
 alias nodeupdate="npm cache clean; npm install npm -g; npm update -g"
-# phpbrew
-alias phpupdate="phpbrew update; phpbrew self-update; composer selfupdate" 
+# php stuff
+alias phpupdate="composer selfupdate; phpunit --self-upgrade; symfony self-update; phpbrew update; phpbrew self-update"
 # Syswide (combine previous aliases)
 alias sysupdate="sudo softwareupdate -i -a; brewupdate; gemupdate; nodeupdate; phpupdate"
 

@@ -6,7 +6,7 @@ npm install npm -g
 npm update -g
 
 # basic
-npm install -g grunt-cli grunt bower gulp express jasmine karma mocha browserify
+npm install -g grunt-cli grunt bower gulp express express-generator jasmine karma mocha browserify
 
 # ST3 deps
 npm install -g coffee-script jshint less csslint typescript sasslint scsslint coffeelint
