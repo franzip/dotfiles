@@ -16,7 +16,7 @@ npm install -g backbone nodemon async socket.io mongoose hapi request forever mk
 
 npm install -g cordova phonegap ionic
 
-npm install -g lodash loopback pm2 debug commander moment q passport redis knockout
+npm install -g lodash loopback pm2 debug commander moment q passport redis knockout jsx
 
 npm install -g react nodemailer minimist chalk colors underscore jade bluebird sails
 

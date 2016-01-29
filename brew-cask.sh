@@ -38,3 +38,4 @@ brew cask install atom
 brew cask install rowanj-gitx
 brew cask install sublime-text3
 brew cask install iterm2
+brew cask install mongochef

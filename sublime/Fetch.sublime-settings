@@ -17,6 +17,8 @@
 		"normalize css": "https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css",
 		"phone format (libphonenumber)": "https://raw.githubusercontent.com/albeebe/phoneformat.js/master/PhoneFormat.js",
 		"reactjs": "https://fb.me/react-0.14.3.min.js",
+		"reactjs-addons": "https://fb.me/react-with-addons-0.14.6.js",
+		"reactjs-dom": "https://fb.me/react-dom-0.14.6.min.js",
 		"requirejs": "https://raw.githubusercontent.com/jrburke/requirejs/master/require.js",
 		"threejs": "https://raw.githubusercontent.com/mrdoob/three.js/master/build/three.min.js",
 		"underscore": "https://raw.githubusercontent.com/jashkenas/underscore/master/underscore-min.js",

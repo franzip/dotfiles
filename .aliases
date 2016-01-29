@@ -115,7 +115,7 @@ alias brewupdate="brew update; brew upgrade --all; brew cleanup; cask update; ca
 # Node & npm
 alias nodeupdate="npm cache clean; npm install npm -g; npm update -g"
 # php stuff
-alias phpupdate="composer selfupdate; phpunit --self-upgrade; symfony self-update; phpbrew update; phpbrew self-update"
+alias phpupdate="composer selfupdate; phpunit --self-upgrade; symfony self-update; phpbrew update; sudo phpbrew self-update"
 # Syswide (combine previous aliases)
 alias sysupdate="sudo softwareupdate -i -a; brewupdate; gemupdate; nodeupdate; phpupdate"
 
