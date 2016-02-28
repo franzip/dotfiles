@@ -99,7 +99,7 @@
       "it": true,
       "jasmine": true,
       "process": true,
-      "global": true;
+      "global": true,
       "Meteor": true,
       "module": true,
       "sinon": true
