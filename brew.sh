@@ -66,12 +66,6 @@ brew install wget --with-iri
 # generic colouriser  http://kassiopeia.juls.savba.sk/~garabik/software/grc/
 brew install grc
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
 brew install homebrew/dupes/openssh
@@ -126,6 +120,7 @@ brew install ack
 brew install ffmpeg --with-libvpx
 brew install git
 brew install git-flow
+brew install elixir
 brew install go
 brew install ngrok
 brew install imagemagick --with-webp
@@ -151,8 +146,11 @@ brew install zopfli
 brew install tidy-html5
 
 # Markdown TOC generator
-wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -O /usr/local/bin/gh-md-toc
-chmod a+x /usr/local/bin/gh-md-toc
+curl -L https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.5.0/gh-md-toc.darwin.amd64.tgz > gh-md-toc.tgz
+tar -xvzf gh-md-toc.tgz
+rm gh-md-toc.tgz
+chmod a+x gh-md-toc
+mv gh-md-toc /usr/local/bin/gh-md-toc
 
 echo "# use GNU utils" >> ~/.path
 echo "export PATH=\"$(brew --prefix coreutils)/libexec/gnubin:$PATH\"" >> ~/.path
