@@ -26,6 +26,7 @@ brew cask install spotify-notifications
 brew cask install the-unarchiver
 brew cask install utorrent
 brew cask install vlc
+brew cask install wireshark
 
 # browsers
 brew cask install google-chrome
@@ -35,7 +36,8 @@ brew cask install torbrowser
 
 # dev
 brew cask install atom
-brew cask install rowanj-gitx
+brew cask install postman
+brew cask install gitkraken
 brew cask install sublime-text3
 brew cask install iterm2
 
