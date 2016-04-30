@@ -10,7 +10,6 @@ brew install mysql
 mysqld --initialize --log-error-verbosity --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 brew cask install sequel-pro
-brew install phpmyadmin
 brew cask install mysqlworkbench
 
 # Postgres + autostart
@@ -28,6 +27,10 @@ brew cask install mongochef
 # Cassandra + autostart
 brew install cassandra
 ln -sfv /usr/local/opt/cassandra/*.plist ~/Library/LaunchAgents
+
+# CouchDB + autostart
+brew install couchdb
+ln -sfv /usr/local/opt/couchdb/*.plist ~/Library/LaunchAgents
 
 # Redis + autostart
 brew install redis
