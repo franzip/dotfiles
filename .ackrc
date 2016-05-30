@@ -2,28 +2,45 @@
 --color-match=bold white
 --color
 
+--ignore-dir=coverage
 --ignore-dir=log
 --ignore-dir=tmp
+--ignore-dir=spec
+--ignore-dir=test
 --ignore-dir=vendor
---ignore-dir=coverages/
+--ignore-dir=coverages
 --ignore-dir=public/generated
+--ignore-dir=node_modules
+
+--ignore-file=ext:bak
+--ignore-file=ext:htc
+--ignore-file=ext:pdf
+--ignore-file=ext:sql
+
+--ignore-file=match:.gitignore
+--ignore-file=match:jquery.js
+--ignore-file=match:jquery-ui.js
+--ignore-file=match:.rbfu-version
+--ignore-file=match:.rbenv-version
+--ignore-file=match:.rspec
+--ignore-file=match:.rvmrc
 
 --sort-files
 
 # HAML & SASS
---type-add=ruby=.haml,.sign.update(data)ass,.scss
---type-add=html=.haml
---type-add=css=.sass,.scss
+--type-set=ruby=.haml,.sign.update(data)ass,.scss
+--type-set=html=.haml
+--type-set=css=.sass,.scss
 # Ruby
---type-add=ruby=Rakefile,Capfile,Gemfile
+--type-set=ruby=Rakefile,Capfile,Gemfile
 # Cucumber
 --type-set=cucumber=.feature
 # CoffeeScript
 --type-set=coffeescript=.coffee
 # JSON
 --type-set=json=.json
---type-add=js=.json
---type-add=yaml=.json
+--type-set=js=.json
+--type-set=yaml=.json
 # Conf
 --type-set=conf=.conf,.config
 # Markdown, Textile, Rdoc & POD
