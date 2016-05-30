@@ -1,5 +1,5 @@
-autocmd FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
-autocmd FileType php,html,javascript,python,yml setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
+autocmd FileType ruby,javascript setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType php,html,python,yml setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
 set background=dark
 colorscheme solarized
 set guifont=Inconsolata\ for\ Powerline:h18
