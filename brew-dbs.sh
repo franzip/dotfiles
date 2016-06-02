@@ -24,10 +24,6 @@ brew install mongodb
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
 brew cask install mongochef
 
-# Cassandra + autostart
-brew install cassandra
-ln -sfv /usr/local/opt/cassandra/*.plist ~/Library/LaunchAgents
-
 # CouchDB + autostart
 brew install couchdb
 ln -sfv /usr/local/opt/couchdb/*.plist ~/Library/LaunchAgents

@@ -19,6 +19,7 @@ brew cask install evernote
 brew cask install gpgtools
 brew cask install gyazo
 brew cask install miro-video-converter
+brew cask install omnidisksweeper
 brew cask install skype
 brew cask install slack
 brew cask install spotify
@@ -40,4 +41,3 @@ brew cask install postman
 brew cask install gitkraken
 brew cask install sublime-text3
 brew cask install iterm2
-
