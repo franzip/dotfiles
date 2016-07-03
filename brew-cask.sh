@@ -2,42 +2,42 @@
 
 brew update
 brew upgrade
-brew cask update
+cask update
 
 # daily
-brew cask install android-file-transfer
-brew cask install asepsis
-brew cask install appcleaner
-brew cask install caffeine
-brew cask install dropbox
-brew cask install google-drive
-brew cask install google-hangouts
-brew cask install goofy
-brew cask install flux
-brew cask install imageoptim
-brew cask install evernote
-brew cask install gpgtools
-brew cask install gyazo
-brew cask install miro-video-converter
-brew cask install omnidisksweeper
-brew cask install skype
-brew cask install slack
-brew cask install spotify
-brew cask install spotify-notifications
-brew cask install the-unarchiver
-brew cask install utorrent
-brew cask install vlc
-brew cask install wireshark
+cask install android-file-transfer
+cask install asepsis
+cask install appcleaner
+cask install caffeine
+cask install dropbox
+cask install google-drive
+cask install google-hangouts
+cask install goofy
+cask install flux
+cask install imageoptim
+cask install evernote
+cask install gpgtools
+cask install gyazo
+cask install miro-video-converter
+cask install omnidisksweeper
+cask install skype
+cask install slack
+cask install spotify
+cask install spotify-notifications
+cask install the-unarchiver
+cask install utorrent
+cask install vlc
+cask install wireshark
 
 # browsers
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install firefox
-brew cask install torbrowser
+cask install google-chrome
+cask install google-chrome-canary
+cask install firefox
+cask install torbrowser
 
 # dev
-brew cask install atom
-brew cask install postman
-brew cask install gitkraken
-brew cask install sublime-text3
-brew cask install iterm2
+cask install atom
+cask install postman
+cask install gitkraken
+cask install sublime-text3
+cask install iterm2
