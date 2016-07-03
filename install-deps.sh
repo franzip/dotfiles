@@ -37,5 +37,5 @@ echo $BASH && echo $BASH_VERSION
 
 # cleanup
 brew cleanup
-brew cask cleanup
+cask cleanup
 brew doctor

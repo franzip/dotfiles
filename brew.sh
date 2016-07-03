@@ -36,7 +36,7 @@ brew tap homebrew/science
 # Get ready to brew
 brew update
 brew cleanup
-brew cask cleanup
+cask cleanup
 
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
@@ -100,6 +100,7 @@ brew install nmap
 brew install ngrep
 brew install openssl
 brew install pngcheck
+brew install siege
 brew install socat
 brew install ssh-copy-id
 brew install sshrc

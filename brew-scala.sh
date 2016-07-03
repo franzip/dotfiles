@@ -2,4 +2,4 @@
 
 brew install sbt
 brew install scala
-brew cask install scala-ide
+cask install scala-ide

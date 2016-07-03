@@ -37,6 +37,7 @@ npm install -g babel-cli
 npm install -g mean-cli
 npm install -g ember-cli
 npm install -g vue-cli
+npm install -g react-tools
 npm install -g resume-cli
 # Frameworks
 npm install -g cordova
