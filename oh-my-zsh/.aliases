@@ -75,14 +75,11 @@ alias aphrest="apachectl stop"
 #                                bins aliases
 # ============================================================================
 
-alias cask='brew cask'
 alias g="git"
 alias fs="stat -f \"%z bytes\""
 alias f="find . -name "
 alias h="history"
 alias j="jobs"
-# `cat` with beautiful colors. requires Pygments installed.
-#                  sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 alias apacheconf='sudo subl /etc/apache2/httpd.conf'
 
@@ -157,10 +154,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
-
-# List installed homebrew/cask packages
-alias brewery="brew list"
-alias cellar="brew cask list"
 
 # List globally installed node_modules
 alias node_modules="ls -1 /usr/local/lib/node_modules"
