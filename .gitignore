@@ -4,66 +4,11 @@
 # Folder view configuration files
 .DS_Store
 Desktop.ini
-.AppleDouble
-.LSOverride
 
 # Thumbnail cache files
 ._*
 Thumbs.db
 
-# OSX
-.DocumentRevisions-V100
-.fseventsd
+# Files that might appear on external disks
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
-
-# Compiled C++ files
-*.out
-
-# Application specific files
-.sass-cache
-
-# IDEs
-.idea
-*.iml
-*.ipr
-*.iws
-/out/
-.idea_modules/
-
-# bower
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
-
-# laravel
-/bootstrap/compiled.php
-.env.*.php
-.env.php
-.env
-
-# SBT
-target/
-lib_managed/
-src_managed/
-project/boot/
-.history
-.cache
-
-# NODE
-logs
-*.log
-npm-debug.log*
-pids
-*.pid
-*.seed
-lib-cov
-coverage
-.grunt
-.lock-wscript
-build/Release
-node_modules
-
