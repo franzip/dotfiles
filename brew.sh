@@ -145,6 +145,7 @@ brew install zopfli
 # Enable HTML5 support in tidy
 # https://github.com/w3c/tidy-html5
 brew install tidy-html5
+brew install phantomjs
 
 # Markdown TOC generator
 curl -L https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.5.0/gh-md-toc.darwin.amd64.tgz > gh-md-toc.tgz

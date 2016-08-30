@@ -27,7 +27,6 @@ cask install mongochef
 # Redis + autostart
 brew install redis
 ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
-cask install rdm
 
 # CouchDB + autostart
 brew install couchdb
@@ -38,6 +37,5 @@ mongo --version && mongod --version
 psql --version
 sqlite3 --version
 mysql --version
-cqlsh --version
 redis-cli --version
 echo "Reminder: set the root password: mysql -u root password 'yourpass'"

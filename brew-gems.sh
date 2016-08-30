@@ -4,8 +4,7 @@ function globalGems() {
   # make sure we're up to date
   gem update --system
   gem update
-  # if you're running Yosemite, you're safe.
-  # Otherwise look here http://stackoverflow.com/a/19807558
+  # http://stackoverflow.com/a/19807558
   gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2 --use-system-libraries
   # install db adapters
   gem install sqlite3

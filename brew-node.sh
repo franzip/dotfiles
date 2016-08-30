@@ -23,6 +23,8 @@ npm install -g eslint
 npm install -g jscs
 npm install -g jsxhint
 npm install -g eslint
+npm install -g babel-eslint
+npm install -g tslint
 npm install -g coffeelint
 npm install -g csslint
 npm install -g sasslint
@@ -54,26 +56,8 @@ npm install -g nodemon
 npm install -g forever
 npm install -g prettyjson
 npm install -g node-inspector
-npm install -g phantomjs
-
-# Meteor.js
+# Meteor
 curl https://install.meteor.com/ | sh
-
 # Generators
 npm install -g express-generator
 npm install -g yo
-npm install -g generator-angular
-npm install -g generator-angular-fullstack
-npm install -g generator-backbone
-npm install -g generator-babel-boilerplate
-npm install -g generator-karma
-npm install -g generator-mocha
-npm install -g generator-gulp-webapp
-npm install -g generator-polymer
-npm install -g generator-node
-npm install -g generator-bootstrap
-npm install -g generator-jquery
-npm install -g generator-mean
-npm install -g generator-webapp
-npm install -g generator-meteor
-npm install -g generator-backbone-mocha
