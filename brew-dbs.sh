@@ -4,6 +4,7 @@ brew update && brew upgrade && brew doctor
 
 # Install sqlite
 brew install sqlite
+cask install sqlitebrowser
 
 # MySQL + autostart
 brew install mysql

@@ -50,5 +50,3 @@ echo "All done. Dumping info (versions should match):"
 which python
 pyenv version
 python --version
-
-

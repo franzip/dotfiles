@@ -15,6 +15,7 @@ npm install -g browserify
 npm install -g less
 npm install -g coffee-script
 npm install -g typescript
+npm install -g typings
 npm install -g jsx
 npm install -g elm
 # Linters
@@ -59,5 +60,5 @@ npm install -g node-inspector
 # Meteor
 curl https://install.meteor.com/ | sh
 # Generators
-npm install -g express-generator
 npm install -g yo
+npm install -g express-generator

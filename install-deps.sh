@@ -8,19 +8,16 @@ rvm --default use ruby-2.2.1
 
 echo "Installing node.js"
 brew install node
-echo "Installing nave"
-brew install nave
+echo "Installing nvm"
+brew install nvm
 
 brew cleanup
 
-echo "Ok, install is done. Let's check if we broke anything..."
-# Nave/Node check
-echo "Nave version:"
-echo `nave ls`
-echo "Installed node.js version:"
-echo `node -v`
-# rvm check
-echo "Installed rvm version:"
+echo "nvm version:"
+echo `nvm --version`
+echo "node.js version:"
+echo "node -v"
+echo "rvm version:"
 echo `rvm -v`
 # "rvm is a function" test
 # this will probably fail right now, just a reminder to source rvm
