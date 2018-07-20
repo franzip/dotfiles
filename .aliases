@@ -6,6 +6,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # ============================================================================
@@ -74,13 +75,12 @@ alias aphrest="apachectl stop"
 #                                bins aliases
 # ============================================================================
 
+alias ack="ack -o"
 alias g="git"
 alias fs="stat -f \"%z bytes\""
 alias f="find . -name "
 alias h="history"
 alias j="jobs"
-# `cat` with beautiful colors. requires Pygments installed.
-#                  sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 alias apacheconf='sudo subl /etc/apache2/httpd.conf'
 
@@ -88,20 +88,12 @@ alias apacheconf='sudo subl /etc/apache2/httpd.conf'
 #                                 Upkeep
 # ============================================================================
 
-# Recursively delete `.DS_Store` files
 alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
-# Empty the Trash on all mounted volumes and the main HDD
-# Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
-# Kill all the tabs in Chrome to free up memory
-# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-# sudo is required
-alias fixpermissions="diskutil repairPermissions /"
-# Syswide (combine previous aliases)
-alias sysclean="dscleanup; emptytrash; fixpermissions"
+alias sysclean="dscleanup; emptytrash;"
 
 # ============================================================================
 #                               Updates
@@ -189,17 +181,13 @@ alias spoton="sudo mdutil -a -i on"
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
 
-# Merge PDF files
-# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
-alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
-
 # Trim new lines and copy to clipboard
 alias trimcopy="tr -d '\n' | pbcopy"
 
-command -v grunt > /dev/null && alias grunt="grunt --stack"
-
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+alias path='echo -e ${PATH//:/\\n}'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"

@@ -1,7 +1,10 @@
+--smart-case
+
 --color-filename=bold red
 --color-match=bold white
 --color
 
+--ignore-dir=.idea/
 --ignore-dir=coverage
 --ignore-dir=log
 --ignore-dir=tmp
