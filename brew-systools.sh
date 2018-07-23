@@ -10,8 +10,10 @@ brew install ec2-api-tools
 # azure
 npm install -g azure-cli
 # vbox + vagrant
-cask install virtualbox
-cask install vagrant
-cask install vagrant-manager
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vagrant-manager
 # docker
-cask install dockertoolbox
+brew cask install docker-toolbox
+brew install kubernetes-cli
+brew cask install minikube

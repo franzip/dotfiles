@@ -4,26 +4,25 @@ brew update && brew upgrade && brew doctor
 
 # Install sqlite
 brew install sqlite
-cask install sqlitebrowser
+brew cask install sqlitebrowser
 
 # MySQL + autostart
 brew install mysql
 mysqld --initialize --log-error-verbosity --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
-cask install sequel-pro
-cask install mysqlworkbench
+brew cask install sequel-pro
 
 # Postgres + autostart
 brew install postgres
 initdb `brew --prefix`/var/postgres/data -E utf8
 createdb `whoami`
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-cask install psequel
+brew cask install psequel
 
 # MongoDB + autostart
 brew install mongodb
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
-cask install mongochef
+brew cask install mongochef
 
 # Redis + autostart
 brew install redis
