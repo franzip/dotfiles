@@ -49,11 +49,10 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew colored-man composer gem osx meteor python pyenv rails vagrant web-search zsh-syntax-highlighting)
+plugins=(git brew colored-man gem osx python pyenv vagrant zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH=$PATH:/Users/franzip/.rvm/gems/ruby-2.2.0/bin:/Users/franzip/.rvm/gems/ruby-2.2.0@global/bin:/Users/franzip/.rvm/rubies/ruby-2.2.0/bin:~/.phpbrew/bin:/Users/franzip/.phpbrew/bin:/Users/franzip/.pyenv/shims:/Users/franzip/.pyenv/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/sbin:/Users/franzip/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/franzip/.rvm/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,8 +81,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-eval `dircolors $HOME/.dircolors`
+
 source $ZSH_CUSTOM/.aliases
 source $ZSH_CUSTOM/.extra
 source $ZSH_CUSTOM/.exports
@@ -91,3 +89,5 @@ source $ZSH_CUSTOM/.functions
 source $ZSH_CUSTOM/.zsh_profile
 source $ZSH_CUSTOM/.zshenv
 source $ZSH_CUSTOM/.path
+export NVM_DIR="/Users/francescopezzella/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

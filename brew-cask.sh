@@ -26,6 +26,7 @@ brew cask install slack
 brew cask install spotify
 brew cask install spotify-notifications
 brew cask install the-unarchiver
+brew cask install transmission
 brew cask install vlc
 brew cask install wireshark
 
@@ -39,6 +40,7 @@ brew cask install torbrowser
 brew cask install postman
 brew cask install rowanj-gitx
 brew cask install sublime-text
+brew cask install visual-studio-code
 brew cask install iterm2
 
 brew cleanup && brew cask cleanup

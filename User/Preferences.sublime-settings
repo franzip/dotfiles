@@ -1,6 +1,27 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_match_enabled": true,
+	"binary_files_patterns":
+	[
+		"node_modules",
+		"node_modules/**",
+		"bower_components/**",
+		".meteor/**",
+		".meteor",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"bold_folder_labels": true,
 	"caret_style": "solid",
 	"color_scheme": "Packages/User/SublimeLinter/Asphalt (SL).tmTheme",
@@ -35,6 +56,7 @@
 	"find_selected_text": true,
 	"folder_exclude_patterns":
 	[
+		"node_modules",
 		".meteor",
 		".idea",
 		".svn",
@@ -62,7 +84,13 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Bower",
+		"Dockerfile Syntax Highlighting",
+		"Ethereum",
 		"Markdown",
+		"MarkdownEditing",
+		"MarkdownPreview",
+		"Nettuts+ Fetch",
 		"Vintage"
 	],
 	"indent_guide_options":
