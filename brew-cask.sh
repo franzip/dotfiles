@@ -42,5 +42,6 @@ brew cask install rowanj-gitx
 brew cask install sublime-text
 brew cask install visual-studio-code
 brew cask install iterm2
+brew cask install sqlpro-studio
 
 brew cleanup && brew cask cleanup
