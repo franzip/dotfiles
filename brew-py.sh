@@ -6,8 +6,6 @@ brew upgrade
 brew install python
 pip install --upgrade setuptools
 pip install --upgrade pip
-
-# ST3 dependencies, gotta install them globally
 pip install pep257
 pip install pep8
 pip install pylint

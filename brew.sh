@@ -53,6 +53,7 @@ brew install hashpump
 brew install hydra
 brew install john
 brew install jpeg
+brew install jq
 brew install knock
 brew install libevent
 brew install libxml2

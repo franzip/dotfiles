@@ -15,6 +15,7 @@
 		"Babel",
 		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
+		"Color Highlighter",
 		"CSS Snippets",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
@@ -23,7 +24,6 @@
 		"Emmet Css Snippets",
 		"Git",
 		"GitGutter",
-		"GoSublime",
 		"Haml",
 		"Handlebars",
 		"HTML Mustache",
@@ -61,10 +61,12 @@
 		"SublimeLinter-php",
 		"SublimeLinter-pylint",
 		"SublimeLinter-ruby",
+		"SublimeLinter-stylelint",
 		"SublimeLinter-xmllint",
 		"Table Cleaner",
 		"Theme - Asphalt",
 		"TypeScript",
-		"VimL"
+		"VimL",
+		"Vue Syntax Highlight"
 	]
 }

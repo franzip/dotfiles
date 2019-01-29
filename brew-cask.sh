@@ -43,5 +43,6 @@ brew cask install sublime-text
 brew cask install visual-studio-code
 brew cask install iterm2
 brew cask install sqlpro-studio
+brew cask install dash
 
 brew cleanup && brew cask cleanup

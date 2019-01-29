@@ -18,20 +18,15 @@
       "BracketHighlighter",
       "PackageResourceViewer",
       "SublimeLinter",
-
+      "A File Icon",
       // Git
       "Git",
       "GitGutter",
-
       // Utils
       "AdvancedNewFile",
       "AutoFileName",
       "DocBlockr",
       "Table Cleaner",
-      "Nettuts+ Fetch",
-      "Markdown Preview",
-      "MarkdownEditing",
-
       // Syntax/Bindings/Completion
       "ApplySyntax",
       "ImprovedSQL",
@@ -42,7 +37,9 @@
       "CSS Snippets",
       "Emmet Css Snippets",
       "Sass",
+      "Go​Sublime",
       "SCSS",
+      "CSS3",
       "LESS",
       "HTML5",
       "VimL",
@@ -51,12 +48,12 @@
       "Meteor Snippets",
       "AngularJS",
       "Backbone.js",
-      "Underscorejs snippets",
       "TypeScript",
       "JavaScript & NodeJS Snippets",
       "JavaScript Completions",
       "JavaScriptNext - ES6 Syntax",
       "Babel",
+      "React ES6 Snippets",
       "ReactJS Snippets",
       "Better CoffeeScript",
       "Grunt Snippets",
@@ -75,7 +72,6 @@
       "All Autocomplete",
       "Elixir",
       "ElixirSublime",
-
       // Prettifier
       "Pretty JSON",
       "Pretty YAML",
