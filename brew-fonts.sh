@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 brew cleanup
 
 brew tap caskroom/fonts
@@ -14,6 +15,8 @@ brew cask install font-liberation-sans
 brew cask install font-droid-sans-mono
 brew cask install font-meslo-lg
 brew cask install font-fira-mono
+brew cask install font-fira-code
+brew cask install font-fira-sans
 brew cask install font-droid-sans
 brew cask install font-ubuntu
 brew cask install font-terminus

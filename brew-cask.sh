@@ -24,7 +24,6 @@ brew cask install omnidisksweeper
 brew cask install skype
 brew cask install slack
 brew cask install spotify
-brew cask install spotify-notifications
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install vlc
@@ -44,5 +43,6 @@ brew cask install visual-studio-code
 brew cask install iterm2
 brew cask install sqlpro-studio
 brew cask install dash
+brew cask install spectacle
 
 brew cleanup && brew cask cleanup

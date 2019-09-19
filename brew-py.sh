@@ -26,6 +26,8 @@ sleep 5
 echo "Installing pyenv..."
 brew install pyenv
 brew install pyenv-virtualenv
+echo "Installing pipenv..."
+brew install pipenv
 # Set pyenv env vars
 echo "Installing pyenv..."
 echo "# START PYENV" >> ~/.path
