@@ -4,6 +4,7 @@ brew update
 brew upgrade
 
 brew install python
+brew install python3
 pip install --upgrade setuptools
 pip install --upgrade pip
 pip install pep257
@@ -12,7 +13,6 @@ pip install pylint
 
 brew install numpy
 brew install scipy
-brew install matplotlib
 
 echo "Checking numpy/scipy/matplotlib install..."
 sleep 5

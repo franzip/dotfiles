@@ -2,7 +2,6 @@
 
 brew update
 brew upgrade
-brew cask upgrade
 
 # daily
 brew cask install 1password
@@ -14,11 +13,11 @@ brew cask install deluge
 brew cask install dropbox
 brew cask install google-drive-file-stream
 brew cask install google-hangouts
+brew cask install gpg-suite
 brew cask install flux
 brew cask install gimp
 brew cask install imageoptim
 brew cask install evernote
-brew cask install gpgtools
 brew cask install gyazo
 brew cask install omnidisksweeper
 brew cask install skype
@@ -27,7 +26,9 @@ brew cask install spotify
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install vlc
+brew cask install whatsapp
 brew cask install wireshark
+brew cask install zoomus
 
 # browsers
 brew cask install google-chrome

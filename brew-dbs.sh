@@ -4,7 +4,6 @@ brew update && brew upgrade && brew doctor
 
 # Install sqlite
 brew install sqlite
-brew cask install sqlitebrowser
 
 # MySQL + autostart
 brew install mysql
@@ -20,9 +19,9 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 brew cask install psequel
 
 # MongoDB + autostart
-brew install mongodb
+brew tap mongodb/brew
+brew install mongodb-community@4.2
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
-brew cask install mongochef
 
 # Redis + autostart
 brew install redis

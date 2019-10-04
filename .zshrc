@@ -5,7 +5,7 @@ export ZSH=/Users/franzip/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +49,7 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew colored-man gem osx python pyenv vagrant zsh-syntax-highlighting)
+plugins=(git brew gem osx python pyenv zsh-autosuggestions)
 
 # User configuration
 
@@ -89,5 +89,6 @@ source $ZSH_CUSTOM/.functions
 source $ZSH_CUSTOM/.zsh_profile
 source $ZSH_CUSTOM/.zshenv
 source $ZSH_CUSTOM/.path
+source $ZSH_CUSTOM/.theme-options
 export NVM_DIR="/Users/francescopezzella/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

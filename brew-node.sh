@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+brew install yarn
+
 # Languages
 npm install -g less
 npm install -g coffee-script

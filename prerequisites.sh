@@ -16,13 +16,14 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # Get ready to brew
 brew update
-brew upgrade --all
+brew upgrade
 brew doctor
 
 echo "Installing Cask..."
 # Install Cask
-brew tap caskroom/cask
-brew tap caskroom/versions
+brew tap homebrew/cask-fonts
+brew tap homebrew/cask-drivers
+brew tap homebrew/cask-versions
 
 # Get ready to brew
 brew update

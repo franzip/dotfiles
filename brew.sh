@@ -19,11 +19,11 @@ brew install gnu-tar
 # running `chsh`.
 brew install bash
 brew install bash-completion2
-
 # Install more GNU stuff
-
+brew install gpg
+brew install gpg2
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # generic colouriser  http://kassiopeia.juls.savba.sk/~garabik/software/grc/
 brew install grc
@@ -31,7 +31,6 @@ brew install grc
 brew install grep
 brew install homebrew/core/screen
 brew install homebrew/core/openssh
-brew install gh
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install automake
@@ -82,12 +81,12 @@ brew install nginx
 brew install ack
 brew install exiv2
 brew install libvpx
-brew install ffmpeg --with-libvpx
+brew install ffmpeg
 brew install git
 brew install git-flow
 brew install elixir
 brew install go
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install icu4c
 brew install lua
 brew install luajit
