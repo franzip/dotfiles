@@ -11,11 +11,9 @@ brew cask install appcleaner
 brew cask install caffeine
 brew cask install deluge
 brew cask install dropbox
-brew cask install google-drive-file-stream
 brew cask install google-hangouts
 brew cask install gpg-suite
 brew cask install flux
-brew cask install gimp
 brew cask install imageoptim
 brew cask install evernote
 brew cask install gyazo
@@ -24,10 +22,8 @@ brew cask install skype
 brew cask install slack
 brew cask install spotify
 brew cask install the-unarchiver
-brew cask install transmission
 brew cask install vlc
 brew cask install whatsapp
-brew cask install wireshark
 brew cask install zoomus
 
 # browsers
@@ -42,7 +38,7 @@ brew cask install rowanj-gitx
 brew cask install sublime-text
 brew cask install visual-studio-code
 brew cask install iterm2
-brew cask install sqlpro-studio
+# brew cask install sqlpro-studio
 brew cask install dash
 brew cask install spectacle
 

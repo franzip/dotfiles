@@ -2,6 +2,7 @@
 
 brew install yarn
 
+npm install -g react-devtools@^4
 # Languages
 npm install -g less
 npm install -g coffee-script
@@ -10,6 +11,7 @@ npm install -g typings
 npm install -g jsx
 npm install -g elm
 # Linters
+npm install -g prettier
 npm install -g eslint
 npm install -g babel-eslint
 npm install -g tslint
