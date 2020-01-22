@@ -24,10 +24,12 @@ brew install gpg
 brew install gpg2
 # Install `wget` with IRI support.
 brew install wget
-
+brew install jq
 # generic colouriser  http://kassiopeia.juls.savba.sk/~garabik/software/grc/
 brew install grc
-
+brew install bzip2
+brew install oniguruma
+brew install libzip
 brew install grep
 brew install homebrew/core/screen
 brew install homebrew/core/openssh
@@ -85,7 +87,6 @@ brew install ffmpeg
 brew install git
 brew install git-flow
 brew install elixir
-brew install go
 brew install imagemagick
 brew install icu4c
 brew install lua
@@ -108,11 +109,12 @@ brew install zopfli
 # https://github.com/w3c/tidy-html5
 brew install tidy-html5
 brew install phantomjs
+# Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Markdown TOC generator
-wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
+curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
 chmod a+x gh-md-toc
-mv gh-md-toc /usr/local/bin/gh-md-toc
 
 echo "# use GNU utils" >> ~/.path
 echo "export PATH=\"$(brew --prefix coreutils)/libexec/gnubin:$PATH\"" >> ~/.path

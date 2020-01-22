@@ -19,7 +19,6 @@ brew cask install font-fira-sans
 brew cask install font-ubuntu
 brew cask install font-terminus
 
-# Powerline font version, grab them all just in case
 brew cask install font-source-code-pro-for-powerline
 brew cask install font-anonymous-pro-for-powerline
 brew cask install font-inconsolata-g-for-powerline
@@ -30,3 +29,9 @@ brew cask install font-liberation-mono-for-powerline
 brew cask install font-meslo-for-powerline
 brew cask install font-fira-mono-for-powerline
 brew cask install font-droid-sans-mono-for-powerline
+
+brew cask install font-hack-nerd-font
+brew cask install font-meslo-nerd-font-mono
+brew cask install font-meslo-nerd-font
+brew cask install font-firamono-nerd-font
+brew cask install font-firacode-nerd-font

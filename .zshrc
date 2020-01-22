@@ -5,8 +5,7 @@ export ZSH=/Users/franzip/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
+ZSH_THEME=powerlevel10k/powerlevel10k
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -15,7 +14,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -49,10 +48,9 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew gem osx python pyenv zsh-autosuggestions)
-
+plugins=(git brew gem osx python pyenv zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+autoload -U compinit && compinit
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -81,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+#
 source $ZSH_CUSTOM/.aliases
 source $ZSH_CUSTOM/.extra
 source $ZSH_CUSTOM/.exports
@@ -89,6 +87,11 @@ source $ZSH_CUSTOM/.functions
 source $ZSH_CUSTOM/.zsh_profile
 source $ZSH_CUSTOM/.zshenv
 source $ZSH_CUSTOM/.path
-source $ZSH_CUSTOM/.theme-options
-export NVM_DIR="/Users/francescopezzella/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# dedupe $PATH
+PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"

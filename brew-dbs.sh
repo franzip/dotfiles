@@ -8,28 +8,23 @@ brew install sqlite
 # MySQL + autostart
 brew install mysql
 mysqld --initialize --log-error-verbosity --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql
-ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 brew cask install sequel-pro
 
 # Postgres + autostart
 brew install postgres
 initdb `brew --prefix`/var/postgres/data -E utf8
 createdb `whoami`
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-brew cask install psequel
+brew install pgcli
 
 # MongoDB + autostart
 brew tap mongodb/brew
 brew install mongodb-community@4.2
-ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
 
 # Redis + autostart
 brew install redis
-ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 
 # CouchDB + autostart
 brew install couchdb
-ln -sfv /usr/local/opt/couchdb/*.plist ~/Library/LaunchAgents
 
 # Final Checks
 mongo --version && mongod --version

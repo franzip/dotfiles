@@ -30,16 +30,16 @@ brew cask install zoomus
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install firefox
-brew cask install torbrowser
 
 # dev
 brew cask install postman
+brew cask install gitkraken
 brew cask install rowanj-gitx
 brew cask install sublime-text
 brew cask install visual-studio-code
 brew cask install iterm2
 # brew cask install sqlpro-studio
-brew cask install dash
+# brew cask install dash
 brew cask install spectacle
 
 brew cleanup && brew cask cleanup

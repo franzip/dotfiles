@@ -11,6 +11,7 @@ npm install -g typings
 npm install -g jsx
 npm install -g elm
 # Linters
+npm install -g standard
 npm install -g prettier
 npm install -g eslint
 npm install -g babel-eslint
@@ -31,10 +32,13 @@ npm install -g prettyjson
 npm install -g node-inspector
 npm install -g localtunnel
 npm install -g npm-check-updates
-# Meteor
-curl https://install.meteor.com/ | sh
 # Generators
 npm install -g yo
+
+npm install -g @vue/cli
+npm install -g gatsby-cli
+
+brew install elm
 
 nvm install --lts
 nvm alias default node
