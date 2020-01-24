@@ -14,7 +14,6 @@ brew cleanup
 echo `type rvm | head -n 1`
 
 # change to bash 4 (installed by homebrew)
-echo "Switching to Bash 4..."
 BASHPATH=$(brew --prefix)/bin/bash
 sudo echo $BASHPATH >> /etc/shells
 chsh -s $BASHPATH # will set for current user only.

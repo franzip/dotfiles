@@ -4,11 +4,11 @@ brew update
 brew upgrade
 
 brew install python
-pip install --upgrade setuptools
-pip install --upgrade pip
-pip install pep257
-pip install pep8
-pip install pylint
+pip3 install --upgrade setuptools
+pip3 install --upgrade pip
+pip3 install pep257
+pip3 install pep8
+pip3 install pylint
 
 echo "Installing pyenv..."
 brew install pyenv-virtualenv

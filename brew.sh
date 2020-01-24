@@ -109,15 +109,11 @@ brew install zopfli
 # https://github.com/w3c/tidy-html5
 brew install tidy-html5
 brew install phantomjs
-# Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Markdown TOC generator
 curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
 chmod a+x gh-md-toc
 
-echo "# use GNU utils" >> ~/.path
-echo "export PATH=\"$(brew --prefix coreutils)/libexec/gnubin:$PATH\"" >> ~/.path
 mv /usr/local/opt/coreutils/libexec/gnubin/ls /usr/local/opt/coreutils/libexec/gnubin/ls_gnu
 ln -s /bin/ls /usr/local/opt/coreutils/libexec/gnubin/ls
 

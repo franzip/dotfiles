@@ -8,7 +8,6 @@ brew install sqlite
 # MySQL + autostart
 brew install mysql
 mysqld --initialize --log-error-verbosity --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql
-brew cask install sequel-pro
 
 # Postgres + autostart
 brew install postgres

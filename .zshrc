@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+export PATH="$HOME/.yarn/bin:$PATH"
 source $ZSH_CUSTOM/.aliases
 source $ZSH_CUSTOM/.extra
 source $ZSH_CUSTOM/.exports
@@ -87,10 +88,15 @@ source $ZSH_CUSTOM/.functions
 source $ZSH_CUSTOM/.zsh_profile
 source $ZSH_CUSTOM/.zshenv
 source $ZSH_CUSTOM/.path
+source $ZSH_CUSTOM/.go-env
+source $ZSH_CUSTOM/.node-env
+source $ZSH_CUSTOM/.py-env
+source $ZSH_CUSTOM/.php-env
+source $ZSH_CUSTOM/.ruby-env
+source $ZSH_CUSTOM/.rust-env
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-completions/zsh-completions.plugin.zsh
 source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-export PATH="$HOME/.yarn/bin:$PATH"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # dedupe $PATH

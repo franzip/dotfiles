@@ -18,5 +18,6 @@ brew install kubernetes-cli
 brew install kubernetes-helm
 helm init
 brew cask install minikube
+brew install terraform
 
 brew cask install google-cloud-sdk
