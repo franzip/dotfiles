@@ -1,0 +1,64 @@
+{
+  "bootstrapped": true,
+  "in_process_packages": [],
+  "installed_packages": [
+    // Basic
+    "Package Control",
+    "Nodejs",
+    "Emmet",
+    "Alignment",
+    "SideBarEnhancements",
+    "BracketHighlighter",
+    "PackageResourceViewer",
+    "SublimeLinter",
+    "A File Icon",
+    // Git
+    "Git",
+    "GitGutter",
+    // Utils
+    "AdvancedNewFile",
+    "AutoFileName",
+    "DocBlockr",
+    "Table Cleaner",
+    // Syntax/Bindings/Completion
+    "ApplySyntax",
+    "ImprovedSQL",
+    "Dotfiles Syntax Highlighting",
+    "nginx",
+    "ApacheConf.tmLanguage",
+    "CSS Snippets",
+    "Emmet Css Snippets",
+    "Sass",
+    "Go​Sublime",
+    "SCSS",
+    "CSS3",
+    "LESS",
+    "HTML5",
+    "TypeScript",
+    "JavaScript & NodeJS Snippets",
+    "JavaScript Completions",
+    "JavaScriptNext - ES6 Syntax",
+    "Babel",
+    "React ES6 Snippets",
+    "ReactJS Snippets",
+    "Twig",
+    "All Autocomplete",
+    // Prettifier
+    "Pretty JSON",
+    "Pretty YAML",
+
+    // Linters
+    "SublimeLinter-annotations",
+    "SublimeLinter-csslint",
+    "Sublime​Linter-contrib-eslint",
+    "SublimeLinter-html-tidy",
+    "SublimeLinter-json",
+    "SublimeLinter-pep257",
+    "SublimeLinter-pep8",
+    "SublimeLinter-php",
+    "SublimeLinter-pylint",
+    "SublimeLinter-ruby",
+    "SublimeLinter-contrib-sass-lint",
+    "SublimeLinter-contrib-scss-lint"
+  ]
+}
