@@ -1,0 +1,50 @@
+--smart-case
+
+--color-filename=bold red
+--color-match=bold white
+--color
+
+--ignore-dir=.idea/
+--ignore-dir=coverage
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=spec
+--ignore-dir=test
+--ignore-dir=vendor
+--ignore-dir=coverages
+--ignore-dir=public/generated
+--ignore-dir=node_modules
+
+--ignore-file=ext:bak
+--ignore-file=ext:htc
+--ignore-file=ext:pdf
+--ignore-file=ext:sql
+
+--ignore-file=match:.gitignore
+--ignore-file=match:.rbenv-version
+--ignore-file=match:.rspec
+--ignore-file=match:.rvmrc
+
+--sort-files
+
+# HAML & SASS
+--type-set=ruby=.haml,.sign.update(data)ass,.scss
+--type-set=html=.haml
+--type-set=css=.sass,.scss
+# Ruby
+--type-set=ruby=Rakefile,Capfile,Gemfile
+# Cucumber
+--type-set=cucumber=.feature
+# JSON
+--type-set=json=.json
+--type-set=js=.json
+--type-set=yaml=.json
+# Conf
+--type-set=conf=.conf,.config
+# Markdown, Textile, Rdoc & POD
+--type-set=markdown=.markdown,.md,.mdown,.mkd,.mkdn
+--type-set=textile=.textile
+--type-set=rdoc=.rdoc
+--type-set=pod=.pod
+# documentation
+--type-set=documentation=.markdown,.md,.mdown,.mkd,.mkdn,.textile,.rdoc,.pod.txt
