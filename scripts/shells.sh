@@ -9,12 +9,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 cp ~/.zshrc ~/.zshrc.orig
 cp ./.zshrc ~
-cp ./.{aliases,exports,extra,functions,envman} ~/.oh-my-zsh/custom
+cp ./.{aliases,exports,path,extra,functions,envman} ~/.oh-my-zsh/custom
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 
 cp ./.p10k.zsh ~
 

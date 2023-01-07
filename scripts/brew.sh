@@ -28,3 +28,4 @@ brew tap homebrew/cask-versions
 brew tap golangci/tap
 brew tap heroku/brew
 brew tap mongodb/brew
+brew tap dbcli/tap

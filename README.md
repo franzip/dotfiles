@@ -10,5 +10,7 @@ Steps to take on a new machine:
 4) Run `./scripts/fonts.sh` - Fonts
 5) Run `./scripts/utils.sh` - Useful bins
 6) Run `./scripts/langs.sh` - Langs + package/version managers
-7) Run `./scripts/shells.sh` - Setup bash/zsh/oh-my-zsh
-8) Run `./scripts/`
+7) Run `./scripts/shells.sh` - Setup zsh/oh-my-zsh
+8) Run `./scripts/dbs.sh` - Setup databases
+9) Run `./scripts/ops.sh` - Ops
+10) Run `./scripts/casks.sh` - Casks
