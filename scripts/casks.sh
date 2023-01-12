@@ -8,11 +8,11 @@ brew install adobe-acrobat-reader
 brew install android-file-transfer
 brew install appcleaner
 brew install caffeine
-brew install deluge
+# brew install deluge
 brew install dropbox
+brew install figma
 brew install homebrew/cask/flux
 brew install imageoptim
-brew install evernote
 brew install omnidisksweeper
 brew install slack
 brew install spotify
@@ -38,4 +38,5 @@ brew install pgadmin4
 
 cp ./configs/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
 rm -rf ~/Library/Application\ Support/Sublime\ Text/Packages/User 2> /dev/null
-cp -r ./configs/sublime-text ~/Library/Application\ Support/Sublime\ Text/Packages 2> /dev/null
+mkdir ~/Library/Application\ Support/Sublime\ Text/Packages/User
+cp -r ./configs/sublime-text ~/Library/Application\ Support/Sublime\ Text/Packages/User 2> /dev/null
