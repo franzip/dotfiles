@@ -49,7 +49,7 @@ export UPDATE_ZSH_DAYS=30
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew gem macos python pyenv zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(git brew gem macos python pyenv zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 autoload -U compinit && compinit
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -82,8 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-export PATH="$HOME/.yarn/bin:$PATH"
-eval $(/opt/homebrew/bin/brew shellenv)
 source $ZSH_CUSTOM/.aliases
 source $ZSH_CUSTOM/.extra
 source $ZSH_CUSTOM/.exports
@@ -91,10 +89,15 @@ source $ZSH_CUSTOM/.functions
 source $ZSH_CUSTOM/.zsh_profile
 source $ZSH_CUSTOM/.zshenv
 source $ZSH_CUSTOM/.path
-source $ZSH_CUSTOM/.envman
+source $ZSH_CUSTOM/.go-env
+source $ZSH_CUSTOM/.node-env
+source $ZSH_CUSTOM/.py-env
+source $ZSH_CUSTOM/.rust-env
+source $ZSH_CUSTOM/.ruby-env
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_CUSTOM/plugins/zsh-completions/zsh-completions.plugin.zsh
 source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # dedupe $PATH
