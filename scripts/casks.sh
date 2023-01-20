@@ -39,4 +39,5 @@ brew install pgadmin4
 cp ./configs/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
 rm -rf ~/Library/Application\ Support/Sublime\ Text/Packages/User 2> /dev/null
 mkdir ~/Library/Application\ Support/Sublime\ Text/Packages/User
-cp -r ./configs/sublime-text ~/Library/Application\ Support/Sublime\ Text/Packages/User 2> /dev/null
+cp ./configs/sublime-text/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User 2> /dev/null
+cp ./configs/sublime-text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User 2> /dev/null

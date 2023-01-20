@@ -34,12 +34,12 @@ echo "Golang stuff"
 brew install go
 brew install goenv
 
-go get -u golang.org/x/lint/golint
-go get -u github.com/uudashr/gopkgs/cmd/gopkgs
-go get -u github.com/ramya-rao-a/go-outline
-go get -u github.com/nsf/gocode
-go get -u golang.org/x/tools/cmd/goimports
-go get -u github.com/rogpeppe/godef
+go install golang.org/x/lint/golint@latest
+go install github.com/uudashr/gopkgs/cmd/gopkgs@latest
+go install github.com/ramya-rao-a/go-outline@latest
+go install github.com/nsf/gocode@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/rogpeppe/godef@latest
 
 echo "Python stuff"
 

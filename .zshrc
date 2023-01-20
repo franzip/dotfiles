@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 export PATH="$HOME/.yarn/bin:$PATH"
+eval $(/opt/homebrew/bin/brew shellenv)
 source $ZSH_CUSTOM/.aliases
 source $ZSH_CUSTOM/.extra
 source $ZSH_CUSTOM/.exports

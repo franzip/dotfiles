@@ -29,7 +29,7 @@
     "CSS Snippets",
     "Emmet Css Snippets",
     "Sass",
-    "Go​Sublime",
+    "GoSublime",
     "SCSS",
     "CSS3",
     "LESS",
@@ -50,7 +50,7 @@
     // Linters
     "SublimeLinter-annotations",
     "SublimeLinter-csslint",
-    "Sublime​Linter-contrib-eslint",
+    "SublimeLinter-contrib-eslint",
     "SublimeLinter-html-tidy",
     "SublimeLinter-json",
     "SublimeLinter-pep257",
