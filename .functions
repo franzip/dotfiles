@@ -152,3 +152,12 @@ function o() {
 		open "$@";
 	fi;
 }
+
+function s() {
+	if [ $# -eq 0 ]
+	then
+		subl .
+	else
+		subl "$@"
+	fi
+}
