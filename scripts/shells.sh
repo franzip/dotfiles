@@ -10,7 +10,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 cp ~/.zshrc ~/.zshrc.orig
 cp ./.zshrc ~
 cp ./.{aliases,exports,path,extra,functions} ~/.oh-my-zsh/custom
-cp ./env/* ~/.oh-my-zsh/custom
+cp ./env/.* ~/.oh-my-zsh/custom
+cp ./env/pyenv.zsh ~/.oh-my-zsh/custom
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
