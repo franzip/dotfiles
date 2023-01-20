@@ -76,5 +76,6 @@ brew install zopfli
 brew install markdown-toc
 brew install tidy-html5
 brew install llvm
+brew install pygments
 
 brew cleanup
