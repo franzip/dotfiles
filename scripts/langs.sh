@@ -15,7 +15,7 @@ rvm gemset create system
 rvm gemset use system
 ruby -v && rvm gemset list && gem list
 
-echo "Node + JS stuff"
+echo "Node stuff"
 brew install node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 brew install yarn
@@ -26,6 +26,7 @@ npm install -g node-inspector
 npm install -g localtunnel
 npm install -g npm-check-updates
 npm install -g yo
+npm install -g yalc
 
 nvm install --lts
 nvm alias default node

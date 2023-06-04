@@ -77,5 +77,6 @@ brew install markdown-toc
 brew install tidy-html5
 brew install llvm
 brew install pygments
+brew install clang-format
 
 brew cleanup
