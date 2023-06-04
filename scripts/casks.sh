@@ -21,6 +21,7 @@ brew install vlc
 brew install whatsapp
 brew install zoom
 brew install signal
+brew install discord
 
 brew install google-chrome
 brew install google-chrome-canary
