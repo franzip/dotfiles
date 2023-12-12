@@ -17,7 +17,7 @@ ruby -v && rvm gemset list && gem list
 
 echo "Node stuff"
 brew install node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 brew install yarn
 npm install -g react-devtools
 npm install -g nodemon
@@ -56,9 +56,7 @@ brew install pipenv
 
 echo "Rust"
 
-brew install rustup
-rustup-init
-rustc --version
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 brew cleanup
 

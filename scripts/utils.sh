@@ -59,6 +59,7 @@ brew install libvpx
 brew install ffmpeg
 brew install git
 brew install git-flow
+brew install gh
 brew install imagemagick
 brew install icu4c
 brew install lua
@@ -78,5 +79,7 @@ brew install tidy-html5
 brew install llvm
 brew install pygments
 brew install clang-format
+brew install pgcli
+brew install vim
 
 brew cleanup

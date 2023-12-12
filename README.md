@@ -7,7 +7,7 @@ Steps to take on a new machine:
 1) Fill `HOMEBREW_GITHUB_API_TOKEN` env var
 2) Run `./scripts/bootstrap.sh` - Copies dotfiles into home folder
 3) Run `./scripts/brew.sh` - Homebrew
-4) Run `./scripts/brew.sh` - Taps 
+4) Run `./scripts/taps.sh` - Taps
 5) Run `./scripts/fonts.sh` - Fonts
 6) Run `./scripts/utils.sh` - Useful bins
 7) Run `./scripts/langs.sh` - Langs + package/version managers

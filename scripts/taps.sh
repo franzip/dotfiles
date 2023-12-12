@@ -9,7 +9,6 @@ brew doctor
 brew tap homebrew/cask
 brew tap homebrew/cask-fonts
 brew tap bramstein/webfonttools
-brew tap homebrew/cask-drivers
 brew tap homebrew/cask-versions
 brew tap golangci/tap
 brew tap heroku/brew

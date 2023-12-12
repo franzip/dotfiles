@@ -8,7 +8,7 @@ brew install adobe-acrobat-reader
 brew install android-file-transfer
 brew install appcleaner
 brew install caffeine
-# brew install deluge
+brew install deluge
 brew install dropbox
 brew install figma
 brew install homebrew/cask/flux
@@ -34,8 +34,7 @@ brew install sublime-text
 brew install visual-studio-code
 brew install iterm2
 brew install gifcapture
-brew install --cask sequel-ace
-brew install pgadmin4
+brew install dbeaver-community
 
 cp ./configs/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
 rm -rf ~/Library/Application\ Support/Sublime\ Text/Packages/User 2> /dev/null
