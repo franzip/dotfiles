@@ -81,5 +81,6 @@ brew install pygments
 brew install clang-format
 brew install pgcli
 brew install vim
+brew install direnv
 
 brew cleanup
