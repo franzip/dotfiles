@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 brew install virtualbox
-brew install homebrew/cask/docker
 brew install heroku
 brew install awscli
 brew install azure-cli

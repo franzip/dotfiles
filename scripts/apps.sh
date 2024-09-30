@@ -40,7 +40,8 @@ brew install postman
 brew install gitx
 
 brew install iterm2
-brew install gifcapture
+brew install --cask docker
+brew install gifox
 
 brew install vim
 brew install neovim
