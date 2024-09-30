@@ -9,10 +9,10 @@ fi
 rsync --exclude ".git/" \
   --exclude "scripts/" \
   --exclude "configs/" \
+  --exclude "env/" \
   --exclude ".DS_Store" \
   --exclude ".osx" \
   --exclude "bootstrap.sh" \
   --exclude "README.md" \
-  --exclude "LICENSE-MIT.txt" \
   -avh . "$HOME";
 

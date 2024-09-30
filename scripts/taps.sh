@@ -6,14 +6,12 @@ brew upgrade
 brew doctor
 
 # Tap
-brew tap homebrew/cask
-brew tap homebrew/cask-fonts
 brew tap bramstein/webfonttools
-brew tap homebrew/cask-versions
 brew tap golangci/tap
 brew tap heroku/brew
 brew tap mongodb/brew
 brew tap dbcli/tap
+brew tap hashicorp/tap
 
 sudo spctl --master-disable
 

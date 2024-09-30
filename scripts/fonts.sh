@@ -8,9 +8,11 @@ brew install font-source-serif-pro
 brew install font-anonymous-pro
 brew install font-inconsolata
 brew install font-meslo-lg
+brew install font-meslo-lg-nerd-font
 brew install font-fira-mono
 brew install font-fira-code
 brew install font-fira-sans
+brew install font-fira-sans-condensed
 brew install font-ubuntu
 brew install font-terminus
 

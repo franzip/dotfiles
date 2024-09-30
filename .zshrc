@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/francesco/.oh-my-zsh
-ZSH_PYENV_QUIET=true
+export ZSH="$HOME/.oh-my-zsh"
+# ZSH_PYENV_QUIET=true
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -48,7 +48,7 @@ export UPDATE_ZSH_DAYS=30
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew gem macos python pyenv zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(git macos zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete you-should-use)
 autoload -U compinit && compinit
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -91,14 +91,13 @@ source $ZSH_CUSTOM/.node-env
 source $ZSH_CUSTOM/.py-env
 source $ZSH_CUSTOM/.rust-env
 source $ZSH_CUSTOM/.ruby-env
-source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_CUSTOM/plugins/zsh-completions/zsh-completions.plugin.zsh
-source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # dedupe $PATH
 PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
 
+eval "$(direnv hook zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

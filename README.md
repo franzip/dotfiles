@@ -11,7 +11,8 @@ Steps to take on a new machine:
 5) Run `./scripts/fonts.sh` - Fonts
 6) Run `./scripts/utils.sh` - Useful bins
 7) Run `./scripts/langs.sh` - Langs + package/version managers
-8) Run `./scripts/shells.sh` - Setup zsh/oh-my-zsh
-9) Run `./scripts/dbs.sh` - Setup databases
+8) Run `./scripts/shells.sh` - zsh/oh-my-zsh + Powerlevel10k theme
+9) Run `./scripts/dbs.sh` - Databases
 10) Run `./scripts/ops.sh` - Ops
-11) Run `./scripts/casks.sh` - Casks
+11) Run `./scripts/apps.sh` - Apps
+12) Run `./osx` - OS customizations
