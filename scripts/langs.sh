@@ -40,6 +40,7 @@ pip3 install --upgrade setuptools
 pip3 install --upgrade pip
 brew install pyenv
 brew install pyenv-virtualenv
+brew install uv
 
 echo "Rust"
 
