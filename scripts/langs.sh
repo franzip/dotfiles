@@ -40,7 +40,8 @@ pip3 install --upgrade setuptools
 pip3 install --upgrade pip
 brew install pyenv
 brew install pyenv-virtualenv
-brew install uv
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 echo "Rust"
 
